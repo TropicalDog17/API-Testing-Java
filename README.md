@@ -1,5 +1,5 @@
 # test-automation
-An desperate attempt to do the OOP assignment alone.
+A desperate attempt to do the OOP assignment alone.
 # Folder structure
 ## src/main/java 
 Contain all java source code, divided to 2 modules
