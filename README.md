@@ -21,8 +21,8 @@ Chứa các biến hằng để sử dụng trong các file khác
 - **Response.java**
 Chứa các class mô phỏng kiểu dữ liệu trả về của API. 
 Dùng GSON Object Mapper chuyển đổi các file JSON thành các object có cấu trức dữ liệu được định nghĩa ở class Response
-![image](https://user-images.githubusercontent.com/79791913/173883508-8899cc1b-a75b-4205-bda9-5364434cccab.png)
 ![image](https://user-images.githubusercontent.com/79791913/173883554-07724269-2bf3-433b-859e-1130eb8c3a1d.png)
+*Biểu đồ lớp UML*
 
 ### src/main/java/Main.java
 Contains main method
