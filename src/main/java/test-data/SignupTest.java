@@ -18,7 +18,7 @@ public class SignupTest {
     //cover properly signup
     @Test
     void SignUp() {
-        String randomEmail = RandomEmail.getRandomEmail(8)
+        String randomEmail = Utility.RandomEmail.getRandomEmail(8)
                 .concat("@gmail.com");
         System.out.println(randomEmail);
         Response res = Unirest.post("https://auctions-app-2.herokuapp.com/api/signup")
