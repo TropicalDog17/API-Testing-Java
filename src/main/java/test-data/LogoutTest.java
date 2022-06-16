@@ -10,7 +10,7 @@ public class LogoutTest {
         //LoginRequired
     void LogoutWhenAlreadySignedIn() {
         //Login using an existing account
-        String access_token = Utility.mockLogin();
+        String access_token = Utility.mockLogin("ludlz@gmail.com", "123456");
         //test for logout functionality
         ResponseWithAccessToken logoutResponse = Unirest.post("https://auctions-app-2.herokuapp" + ".com/api/logout")
                 .header("accept", "application/json")

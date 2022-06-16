@@ -1,5 +1,6 @@
 import kong.unirest.Unirest;
 
+import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -7,20 +8,23 @@ import java.util.Scanner;
 public class Utility {
 
 
-    public static String mockLogin() {
+    public static String mockLogin(String email, String password) {
         //Login successfully first
         ResponseWithAccessToken res = Unirest.post("https://auctions-app-2.herokuapp.com/api/login")
-                .field("email", "ludlz@gmail.com")
-                .field("password", "123456")
+                .field("email", email)
+                .field("password", password)
                 .asObject(ResponseWithAccessToken.class)//ObjectMapper
                 .getBody();
         //If successfully login, return access token for use
-        return res.data.access_token;
+        if (res.code.equals("1000")) {
+            return res.data.access_token;
+        }
+        return "Wrong user info";
     }
 
     public static String chooseBaseUrl() {
         Scanner sc = new Scanner(System.in);
-        String baseUrl = "https://auctions-app-2.herokuapp.com/api/";//default
+        String baseUrl;
         String baseUrlID;
         System.out.println("==============MENU==============");
         System.out.println("Choose base URL(1/2/3/4/Enter): ");
@@ -59,13 +63,28 @@ public class Utility {
         }
         String endPointId = sc.nextLine()
                 .trim();
-        String testSuiteId = baseUrlId + "." + endPointId;
-        return testSuiteId;
+        return baseUrlId + "." + endPointId;
+    }
+
+    public static AbstractMap.SimpleEntry<String, String> RandomSignup() {
+        String randomEmail = Utility.RandomEmail.getRandomEmail(8)
+                .concat("@gmail.com");
+        Unirest.post("https://auctions-app-2.herokuapp.com/api/signup")
+                .field("email", randomEmail)
+                .field("password", "123456")
+                .field("re_pass", "123456")
+                .field("address", "")
+                .field("name", "Tuan Tran")
+                .field("phone", "034209874")
+                .field("avatar", "")
+                .asObject(Response.class)
+                .getBody();
+        return new AbstractMap.SimpleEntry<>(randomEmail, "123456"); //Return
+        // credential for
+        // further use
     }
 
     public static class RandomEmail {
-        static int length;
-
         public static String getRandomEmail(int length) {
 
             // create a string of uppercase and lowercase characters and numbers
@@ -97,8 +116,7 @@ public class Utility {
                 sb.append(randomChar);
             }
 
-            String randomString = sb.toString();
-            return randomString;
+            return sb.toString();
         }
     }
 }
