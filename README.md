@@ -1,5 +1,5 @@
 # test-automation
-A desperate attempt to do the OOP assignment alone.
+
 
 # Mô tả
 *Cách chạy chương trình(IntelliJ)*: Build project(Ctrl+F9), Chạy project(Shift+F10)
