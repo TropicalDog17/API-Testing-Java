@@ -10,55 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/artifacts/untitled1_jar/untitled1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/data/Auction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/data/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/data/DataAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/data/DataAuction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/data/DataWithAccessToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/response/Response.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Auction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Auction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataAuction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataAuction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataWithAccessToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataWithAccessToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/EditAccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/EditAccountTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/LoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Response.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ResponseDataAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ResponseDataAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ResponseDataAuction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ResponseDataAuction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ResponseSearchResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ResponseSearchResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ResponseWithAccessToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ResponseWithAccessToken.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility$RandomEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility$RandomEmail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/SignupTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/SignupTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/GetListAuctionsByStatusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/GetListAuctionsByStatusTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/EditAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/EditAccountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/data/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/RunTestFromMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/RunTestFromMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Utility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,54 +156,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EditAccountTest.EditPasswordOnly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled1.main" />
+    <configuration name="EditAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="org.example.untitled1.main" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="EditAccountTest" />
-      <option name="METHOD_NAME" value="EditPasswordOnly" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogoutTest.LogoutWhenAlreadySignedIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled1.main" />
+    <configuration name="EditAccountTest.EditEmailAndPasswordCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="org.example.untitled1.main" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LogoutTest" />
-      <option name="METHOD_NAME" value="LogoutWhenAlreadySignedIn" />
+      <option name="MAIN_CLASS_NAME" value="EditAccountTest" />
+      <option name="METHOD_NAME" value="EditEmailAndPasswordCorrectly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignupTest.SignUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled1.main" />
+    <configuration name="EditAccountTest.EditWithExistedEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="org.example.untitled1.main" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignupTest" />
-      <option name="METHOD_NAME" value="SignUp" />
+      <option name="MAIN_CLASS_NAME" value="EditAccountTest" />
+      <option name="METHOD_NAME" value="EditWithExistedEmail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="untitled1.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/untitled1_jar/untitled1.jar" />
-      <method v="2" />
+    <configuration name="EditAccountTest.EditWithExistingEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="org.example.untitled1.main" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EditAccountTest" />
+      <option name="METHOD_NAME" value="EditWithExistingEmail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JAR Application.untitled1.jar" />
-      <item itemvalue="JUnit.EditAccountTest.EditPasswordOnly" />
-      <item itemvalue="JUnit.LogoutTest.LogoutWhenAlreadySignedIn" />
-      <item itemvalue="JUnit.SignupTest.SignUp" />
+      <item itemvalue="JUnit.EditAccountTest.EditWithExistedEmail" />
+      <item itemvalue="JUnit.EditAccountTest" />
+      <item itemvalue="JUnit.EditAccountTest.EditEmailAndPasswordCorrectly" />
+      <item itemvalue="JUnit.EditAccountTest.EditWithExistingEmail" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.untitled1.jar" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.EditAccountTest.EditPasswordOnly" />
-        <item itemvalue="JUnit.LogoutTest.LogoutWhenAlreadySignedIn" />
-        <item itemvalue="JUnit.SignupTest.SignUp" />
+        <item itemvalue="JUnit.EditAccountTest.EditWithExistingEmail" />
+        <item itemvalue="JUnit.EditAccountTest.EditEmailAndPasswordCorrectly" />
+        <item itemvalue="JUnit.EditAccountTest" />
+        <item itemvalue="JUnit.EditAccountTest.EditWithExistedEmail" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +255,7 @@
       <workItem from="1655489555080" duration="19000" />
       <workItem from="1655517761398" duration="310000" />
       <workItem from="1655518090771" duration="2719000" />
-      <workItem from="1655525720697" duration="1275000" />
+      <workItem from="1655525720697" duration="7531000" />
     </task>
     <servers />
   </component>

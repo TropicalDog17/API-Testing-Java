@@ -10,7 +10,7 @@ public class Main {
         System.out.println(testSuiteId);
 
         RunTestFromMain runner = new RunTestFromMain();
-        runner.runOne(testSuiteId);
+        runner.runTest(testSuiteId);
 
         TestExecutionSummary summary = runner.listener.getSummary();
         System.out.println(summary.getTestsFoundCount());

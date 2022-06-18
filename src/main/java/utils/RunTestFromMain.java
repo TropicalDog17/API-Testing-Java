@@ -20,6 +20,8 @@ public class RunTestFromMain {
         put("SignupTest", new ArrayList<String>(List.of("0.1")));
         put("SearchTest", new ArrayList<String>(List.of("0.30")));
         put("EditAccountTest", new ArrayList<String>(List.of("0.2")));
+        put("GetCategoriesTest", new ArrayList<String>(List.of("0.18")));
+        put("GetListAuctionsByStatusTest", new ArrayList<>(List.of("0.5", "1.0")));
     }};
     SummaryGeneratingListener listener = new SummaryGeneratingListener();
 
