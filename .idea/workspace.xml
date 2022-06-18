@@ -1,27 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="untitled1:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/test-data/EditAccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/untitled1_jar/untitled1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/data/Auction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/data/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/data/DataAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/data/DataAuction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/data/DataWithAccessToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/response/Response.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Display.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/RandomEmail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SignupTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/SignupTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Auction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Auction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataAuction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataAuction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataWithAccessToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataWithAccessToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/EditAccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/EditAccountTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Response.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ResponseDataAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ResponseDataAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ResponseDataAuction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ResponseDataAuction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ResponseSearchResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ResponseSearchResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ResponseWithAccessToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ResponseWithAccessToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility$RandomEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility$RandomEmail.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/SignupTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/SignupTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/GetListAuctionsByUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/GetListAuctionsByUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/LogoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/SearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/GetListAuctionsByStatusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/GetListAuctionsByStatusTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/data/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/RunTestFromMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/RunTestFromMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Utility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,17 +87,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="untitled1" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="untitled1" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -104,17 +130,19 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2AWPMOHzegzuH2zt81DbdrGUbDA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -126,10 +154,10 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15527344" />
+    <property name="project.structure.proportion" value="0.15625" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -154,10 +182,10 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EditAccountTest.EditPasswordOnly">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="untitled1.main" />
+      <module name="org.example.untitled1.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,16 +195,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="EditAccountTest" />
       <option name="METHOD_NAME" value="EditPasswordOnly" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetListAuctionsByUserTest.GetListAuctionsByNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled1.main" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetListAuctionsByUserTest" />
-      <option name="METHOD_NAME" value="GetListAuctionsByNewUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,13 +220,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="untitled1.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/untitled1_jar/untitled1.jar" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JAR Application.untitled1.jar" />
+      <item itemvalue="JUnit.EditAccountTest.EditPasswordOnly" />
+      <item itemvalue="JUnit.LogoutTest.LogoutWhenAlreadySignedIn" />
+      <item itemvalue="JUnit.SignupTest.SignUp" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.untitled1.jar" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.EditAccountTest.EditPasswordOnly" />
         <item itemvalue="JUnit.LogoutTest.LogoutWhenAlreadySignedIn" />
         <item itemvalue="JUnit.SignupTest.SignUp" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.GetListAuctionsByUserTest.GetListAuctionsByNewUser" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +272,19 @@
       <workItem from="1655307365152" duration="4948000" />
       <workItem from="1655348988423" duration="449000" />
       <workItem from="1655392679509" duration="557000" />
-      <workItem from="1655396845334" duration="1948000" />
+      <workItem from="1655396845334" duration="2224000" />
+      <workItem from="1655439537159" duration="19000" />
+      <workItem from="1655465534438" duration="87000" />
+      <workItem from="1655475226781" duration="1614000" />
+      <workItem from="1655487606097" duration="668000" />
+      <workItem from="1655489077217" duration="6000" />
+      <workItem from="1655489086749" duration="1000" />
+      <workItem from="1655489231464" duration="103000" />
+      <workItem from="1655489349292" duration="186000" />
+      <workItem from="1655489555080" duration="19000" />
+      <workItem from="1655517761398" duration="310000" />
+      <workItem from="1655518090771" duration="2719000" />
+      <workItem from="1655525720697" duration="1275000" />
     </task>
     <servers />
   </component>
@@ -260,6 +301,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

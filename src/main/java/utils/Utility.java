@@ -1,5 +1,6 @@
 import kong.unirest.Unirest;
 
+
 import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.Random;
@@ -65,7 +66,11 @@ public class Utility {
                 .trim();
         return baseUrlId + "." + endPointId;
     }
+    // Register a new account with fixed password and random email
 
+    /**
+     * @return AbstractMap.SimpleEntry<String, String>
+     */
     public static AbstractMap.SimpleEntry<String, String> RandomSignup() {
         String randomEmail = Utility.RandomEmail.getRandomEmail(8)
                 .concat("@gmail.com");
@@ -79,9 +84,8 @@ public class Utility {
                 .field("avatar", "")
                 .asObject(Response.class)
                 .getBody();
-        return new AbstractMap.SimpleEntry<>(randomEmail, "123456"); //Return
-        // credential for
-        // further use
+        //Return credential for further use
+        return new AbstractMap.SimpleEntry<>(randomEmail, "123456");
     }
 
     public static class RandomEmail {

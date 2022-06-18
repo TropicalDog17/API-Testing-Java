@@ -24,7 +24,7 @@ public class GetListAuctionsByStatusTest {
         assertEquals(0, res.data.auctions.size());
 
     }
-    
+
     private ResponseDataAuction getListAuctionsByStatusId(String statusId) {
         ResponseDataAuction res = Unirest.get(Constant.BASE_URL + "auctions/listAuctionsByStatus" + "/{statusId}")
                 .routeParam("statusId", statusId)
