@@ -1,10 +1,7 @@
 import kong.unirest.Unirest;
 
 
-import java.util.AbstractMap;
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Utility {
 
@@ -29,7 +26,8 @@ public class Utility {
         String baseUrlID;
         System.out.println("==============MENU==============");
         System.out.println("Choose base URL(1/2/3/4/Enter): ");
-        System.out.println("Enter: https://auctions-app-2.herokuapp.com/api/");
+
+        System.out.println("Enter(0): https://auctions-app-2.herokuapp.com/api/");
         System.out.println("1: https://auctions-app-2.herokuapp.com/api/auctions/");
         System.out.println("2: https://auctions-app-2.herokuapp.com/api/comments/");
         System.out.println("3: https://auctions-app-2.herokuapp.com/api/notifications/");
@@ -53,10 +51,25 @@ public class Utility {
         return baseUrlID;
     }
 
+    private static ArrayList<Integer> getImplementedOptions(String baseUrlId) {
+        ArrayList<Integer> implementedOptionsList = new ArrayList<>();
+        for (ArrayList<String> list : Constant.TEST_SUITES_LIST.values()) {
+            for (String element : list) {
+                if (element.startsWith(baseUrlId)) {
+                    implementedOptionsList.add(Integer.parseInt(element.substring(2)));
+                }
+            }
+        }
+        Collections.sort(implementedOptionsList);
+        return implementedOptionsList;
+    }
+
     public static String chooseAPIEndPoint(String baseUrlId) {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> endPointList = Constant.ENDPOINT_LIST.get(baseUrlId);
+        ArrayList<Integer> implementedOptionsList = getImplementedOptions(baseUrlId);
         System.out.println("Choose an endpoint" + "(0-" + endPointList.size() + ")");
+        System.out.println("Implemented option: " + implementedOptionsList);
         int index = 0;
         for (String endPoint : endPointList) {
             System.out.println(index++ + ":/" + endPoint);
@@ -123,4 +136,5 @@ public class Utility {
             return sb.toString();
         }
     }
+
 }

@@ -1,4 +1,3 @@
-import org.junit.platform.engine.discovery.ClassSelector;
 import org.junit.platform.launcher.Launcher;
 import org.junit.platform.launcher.LauncherDiscoveryRequest;
 import org.junit.platform.launcher.TestPlan;
@@ -14,15 +13,8 @@ import static org.junit.platform.engine.discovery.DiscoverySelectors.selectMetho
 
 public class RunTestFromMain {
     private String testSuiteName;
+    private final HashMap<String, ArrayList<String>> testSuitesList = Constant.TEST_SUITES_LIST;
 
-    private static final HashMap<String, ArrayList<String>> testSuitesList = new HashMap<String, ArrayList<String>>() {{
-        put("LoginTest", new ArrayList<String>(List.of("0.0")));
-        put("SignupTest", new ArrayList<String>(List.of("0.1")));
-        put("SearchTest", new ArrayList<String>(List.of("0.30")));
-        put("EditAccountTest", new ArrayList<String>(List.of("0.2")));
-        put("GetCategoriesTest", new ArrayList<String>(List.of("0.18")));
-        put("GetListAuctionsByStatusTest", new ArrayList<>(List.of("0.5", "1.0")));
-    }};
     SummaryGeneratingListener listener = new SummaryGeneratingListener();
 
 
@@ -33,7 +25,7 @@ public class RunTestFromMain {
                 testSuiteName = key;
             }
         }
-        Class TestSuiteClass = selectClass(testSuiteName).getJavaClass();
+        Class<?> TestSuiteClass = selectClass(testSuiteName).getJavaClass();
         Method[] methodList = TestSuiteClass.getDeclaredMethods();
         Scanner sc = new Scanner(System.in);
         System.out.println("Choose a test case: " + "0-" + (methodList.length - 1));
