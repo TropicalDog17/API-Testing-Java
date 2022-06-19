@@ -2,7 +2,7 @@
 
 
 # Mô tả
-*Cách chạy chương trình: Build và chạy bình thường, hoặc sử dụng file jar đã dựng sẵn: **java -jar ./out/artifacts/untitled1_jar/untitled1.jar
+*Cách chạy chương trình: Build và chạy bình thường, hoặc sử dụng file jar đã dựng sẵn: **java -jar ./out/artifacts/untitled1_jar/untitled1.jar**
 - Đầu tiên, user lựa chọn link base URL cho API(default là https://auctions-app-2.herokuapp.com/api/)
 - Sau đó, với base URL tương ứng, user sẽ chọn ra endpoint URL cần thực hiện kiểm thử
 - Với mỗi endpoint URL cần kiểm thử, user sẽ có các lựa chọn: Chạy toàn bộ các test case. hoặc là chọn 1 trong các test case của test suite để chạy
