@@ -8,7 +8,8 @@
 - Với mỗi endpoint URL cần kiểm thử, user sẽ có các lựa chọn: Chạy toàn bộ các test case. hoặc là chọn 1 trong các test case của test suite để chạy
 - Kết quả trả về sẽ là số lượng test thành công hoặc thất bại.
 # Technology
-Jva: JDK 17, Junit 5.8.1, JUnit Jupiter 5.8.1, Unirest 3.11.9, Unirest Object Mapper Gson 3.13.10
+Java:JDK 17, Gradle 7.4, Junit 5.8.1, JUnit Jupiter 5.8.1, Unirest 3.11.9, Unirest Object Mapper Gson 3.13.10
+
  **IDE**: IntelliJ IDEA 2021.3.3
 # Folder structure
 ## src/main/java 
