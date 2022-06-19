@@ -21,11 +21,14 @@ dependencies {
 
 }
 sourceSets {
-    main(({
+    main {
         java {
-            srcDirs = ['test-data', 'utils']
+            srcDirs "src/main/java/test-data"
+            srcDirs "src/main/java/utils"
+            srcDirs "src/main/java/utils/data"
+            srcDirs "src/main/java/utils/response"
         }
-    } as String))
+    }
 }
 test {
     useJUnitPlatform()
