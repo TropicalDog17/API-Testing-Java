@@ -9,6 +9,7 @@ public class Constant {
     private final static ArrayList<String> newsEndpoints = new ArrayList<>(Arrays.asList("", "read/{newId}"));
     static final String BASE_URL = "https://auctions-app-2.herokuapp.com/api/";
     public static final HashMap<String, String> BASE_URL_LIST = new HashMap<>() {{
+        put("0", "https://auctions-app-2.herokuapp.com/api/");
         put("1", "https://auctions-app-2.herokuapp.com/api/auctions/");
         put("2", "https://auctions-app-2.herokuapp.com/api/comments/");
         put("3", "https://auctions-app-2.herokuapp.com/api/notifications/");
