@@ -9,20 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="Add implementedList feature">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+    <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="Add option 0 chooseBaseUrl feature">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility$RandomEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility$RandomEmail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Constant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +252,7 @@
       <workItem from="1655564077899" duration="14000" />
       <workItem from="1655626421369" duration="2116000" />
       <workItem from="1655773574352" duration="86000" />
-      <workItem from="1655773668798" duration="35000" />
+      <workItem from="1655773668798" duration="797000" />
     </task>
     <task id="LOCAL-00001" summary="Fix build.gradle">
       <created>1655626321811</created>
@@ -280,7 +268,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655627856920</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add option 0 chooseBaseUrl feature">
+      <created>1655773729111</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655773729111</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add option 0 chooseBaseUrl feature">
+      <created>1655773738757</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655773738757</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +315,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Fix build.gradle" />
     <MESSAGE value="Add implementedList feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add implementedList feature" />
+    <MESSAGE value="Add option 0 chooseBaseUrl feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add option 0 chooseBaseUrl feature" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
