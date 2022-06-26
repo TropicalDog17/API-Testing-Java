@@ -1,5 +1,6 @@
 import org.junit.platform.launcher.listeners.TestExecutionSummary;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -16,6 +17,17 @@ public class Main {
         System.out.println(summary.getTestsFoundCount());
         System.out.println("Test succeeded: " + summary.getTestsSucceededCount());
         System.out.println("Test failed: " + summary.getTestsFailedCount());
+        List<TestExecutionSummary.Failure> failedTests = summary.getFailures();
+        if (failedTests.size() > 0) {
+            for (TestExecutionSummary.Failure test : failedTests) {
+                System.out.println(test.getTestIdentifier()
+                        .getDisplayName());
+                System.out.println(test.getException()
+                        .toString());
+            }
+        }
+
+
     }
 }
 

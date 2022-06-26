@@ -1,6 +1,6 @@
 import org.junit.platform.launcher.Launcher;
 import org.junit.platform.launcher.LauncherDiscoveryRequest;
-import org.junit.platform.launcher.TestPlan;
+
 import org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder;
 import org.junit.platform.launcher.core.LauncherFactory;
 import org.junit.platform.launcher.listeners.SummaryGeneratingListener;
@@ -37,10 +37,9 @@ public class RunTestFromMain {
         //User choose test case to run
         String index = sc.nextLine()
                 .trim();
-
         System.out.println(index);
 
-        //To be implemented
+
         LauncherDiscoveryRequest request;
         if (index.isEmpty()) {
             request = LauncherDiscoveryRequestBuilder.request()
@@ -53,7 +52,7 @@ public class RunTestFromMain {
                     .build();
         }
         Launcher launcher = LauncherFactory.create();
-        TestPlan testPlan = launcher.discover(request);
+        launcher.discover(request);
         launcher.registerTestExecutionListeners(listener);
         launcher.execute(request);
         System.out.println(testSuiteName);
