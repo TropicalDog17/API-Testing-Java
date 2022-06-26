@@ -4,6 +4,7 @@ import org.junit.platform.launcher.LauncherDiscoveryRequest;
 import org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder;
 import org.junit.platform.launcher.core.LauncherFactory;
 import org.junit.platform.launcher.listeners.SummaryGeneratingListener;
+import org.junit.platform.launcher.listeners.TestExecutionSummary;
 
 import java.lang.reflect.Method;
 import java.util.*;
@@ -56,5 +57,21 @@ public class RunTestFromMain {
         launcher.registerTestExecutionListeners(listener);
         launcher.execute(request);
         System.out.println(testSuiteName);
+    }
+
+    public void displayTestResult() {
+        TestExecutionSummary summary = this.listener.getSummary();
+        System.out.println(summary.getTestsFoundCount());
+        System.out.println("Test succeeded: " + summary.getTestsSucceededCount());
+        System.out.println("Test failed: " + summary.getTestsFailedCount());
+        List<TestExecutionSummary.Failure> failedTests = summary.getFailures();
+        if (failedTests.size() > 0) {
+            for (TestExecutionSummary.Failure test : failedTests) {
+                System.out.println(test.getTestIdentifier()
+                        .getDisplayName());
+                System.out.println(test.getException()
+                        .toString());
+            }
+        }
     }
 }
