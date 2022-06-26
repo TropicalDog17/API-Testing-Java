@@ -9,8 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="Add option 0 chooseBaseUrl feature">
+    <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="Fix a bug when choose wrong option, then choose Enter option, it throws Execption">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility$RandomEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility$RandomEmail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Utility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +267,8 @@
       <workItem from="1655564077899" duration="14000" />
       <workItem from="1655626421369" duration="2116000" />
       <workItem from="1655773574352" duration="86000" />
-      <workItem from="1655773668798" duration="797000" />
+      <workItem from="1655773668798" duration="2414000" />
+      <workItem from="1655826998504" duration="593000" />
     </task>
     <task id="LOCAL-00001" summary="Fix build.gradle">
       <created>1655626321811</created>
@@ -282,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655773738757</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add option 0 chooseBaseUrl feature">
+      <created>1655774474786</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655774474786</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +339,8 @@
     <MESSAGE value="Fix build.gradle" />
     <MESSAGE value="Add implementedList feature" />
     <MESSAGE value="Add option 0 chooseBaseUrl feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add option 0 chooseBaseUrl feature" />
+    <MESSAGE value="Fix a bug when choose wrong option, then choose Enter option, it throws Execption" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix a bug when choose wrong option, then choose Enter option, it throws Execption" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

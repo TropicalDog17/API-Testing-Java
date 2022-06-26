@@ -24,30 +24,27 @@ public class Utility {
         Scanner sc = new Scanner(System.in);
         String baseUrl;
         String baseUrlID;
-        System.out.println("==============MENU==============");
-        System.out.println("Choose base URL(1/2/3/4/Enter): ");
-
-        System.out.println("Enter(0): https://auctions-app-2.herokuapp.com/api/");
-        System.out.println("1: https://auctions-app-2.herokuapp.com/api/auctions/");
-        System.out.println("2: https://auctions-app-2.herokuapp.com/api/comments/");
-        System.out.println("3: https://auctions-app-2.herokuapp.com/api/notifications/");
-        System.out.println("4: https://auctions-app-2.herokuapp.com/api/bid/");
-        System.out.println("5: https://auctions-app-2.herokuapp.com/api/news/");
+        displayMenu();
         baseUrlID = sc.nextLine()
                 .trim();
-        if (!baseUrlID.isEmpty()) {
-            System.out.println(baseUrlID);
-            if (Constant.BASE_URL_LIST.containsKey(baseUrlID)) {
-                baseUrl = Constant.BASE_URL_LIST.get(baseUrlID);
-                System.out.println("Base URL is: " + baseUrl);
-            } else {
-                System.out.println("Wrong options");
-                chooseBaseUrl();
-            }
-        } else {
+        if (baseUrlID.isEmpty()) {
             System.out.println("Base URL is: https://auctions-app-2.herokuapp.com/api/");
             return "0";
         }
+        while (!Constant.BASE_URL_LIST.containsKey(baseUrlID)) { //Users enter wrong option
+            System.out.println("Wrong options");
+            displayMenu();
+            baseUrlID = sc.nextLine()
+                    .trim();
+            if (baseUrlID.isEmpty()) {
+                System.out.println("Base URL is: https://auctions-app-2.herokuapp.com/api/");
+                return "0";
+            }
+        }
+        baseUrl = Constant.BASE_URL_LIST.get(baseUrlID);
+        System.out.println("Base URL is: " + baseUrl);
+
+
         return baseUrlID;
     }
 
@@ -137,4 +134,15 @@ public class Utility {
         }
     }
 
+    private static void displayMenu() {
+        System.out.println("==============MENU==============");
+        System.out.println("Choose base URL(0/1/2/3/4/Enter): ");
+
+        System.out.println("Enter(0): https://auctions-app-2.herokuapp.com/api/");
+        System.out.println("1: https://auctions-app-2.herokuapp.com/api/auctions/");
+        System.out.println("2: https://auctions-app-2.herokuapp.com/api/comments/");
+        System.out.println("3: https://auctions-app-2.herokuapp.com/api/notifications/");
+        System.out.println("4: https://auctions-app-2.herokuapp.com/api/bid/");
+        System.out.println("5: https://auctions-app-2.herokuapp.com/api/news/");
+    }
 }
