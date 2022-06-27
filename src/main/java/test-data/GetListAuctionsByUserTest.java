@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 public class GetListAuctionsByUserTest {
     @Test
     void GetListAuctionsByNewUser() {
-        String access_token = Utility.mockLogin("ludlz@gmail.com", "123456");
+        String access_token = Utility.getAccessTokenForTest("ludlz@gmail.com", "123456");
         ResponseDataAuction res = Unirest.get(Constant.BASE_URL + "auctions/listAuctionsByUser" + "/{statusId}")
                 .routeParam("statusId", "3")
                 .queryString("index", "0")
