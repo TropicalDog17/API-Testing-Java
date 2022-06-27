@@ -9,10 +9,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="Fix a bug when choose wrong option, then choose Enter option, it throws Execption">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
     <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="refactor project directory">
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_31_AM_[Changes]/Utility.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_31_AM_[Changes]/buildOutputCleanup.lock" afterDir="false" />
@@ -74,7 +70,6 @@
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/LoginTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/SignupTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
->>>>>>> master
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,11 +119,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-<<<<<<< HEAD
-        <entry key="$PROJECT_DIR$" value="master" />
-=======
         <entry key="$PROJECT_DIR$" value="improve-menu" />
->>>>>>> master
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -263,11 +254,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.EditAccountTest.EditWithExistingEmail" />
         <item itemvalue="JUnit.EditAccountTest.EditEmailAndPasswordCorrectly" />
         <item itemvalue="JUnit.EditAccountTest" />
         <item itemvalue="JUnit.EditAccountTest.EditWithExistedEmail" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
