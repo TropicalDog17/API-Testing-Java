@@ -20,7 +20,7 @@ public class SearchTest {
 
     @Test
     void SearchWithAccessToken() {
-        String access_token = Utility.mockLogin("ludlz@gmail.com", "123456");
+        String access_token = Utility.getAccessTokenForTest("ludlz@gmail.com", "123456");
         ResponseSearchResult res = Unirest.get(Constant.BASE_URL.concat("search"))
                 .queryString("type", "4")
                 .queryString("key", "a")

@@ -6,7 +6,7 @@ import java.util.*;
 public class Utility {
 
 
-    public static String mockLogin(String email, String password) {
+    public static String getAccessTokenForTest(String email, String password) {
         //Login successfully first
         ResponseWithAccessToken res = Unirest.post("https://auctions-app-2.herokuapp.com/api/login")
                 .field("email", email)

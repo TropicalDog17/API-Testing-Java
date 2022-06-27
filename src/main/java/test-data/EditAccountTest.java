@@ -13,7 +13,7 @@ public class EditAccountTest {
         String password = userInfo.getValue();
 
 
-        String access_token = Utility.mockLogin(email, password);
+        String access_token = Utility.getAccessTokenForTest(email, password);
         ResponseDataAccount res = Unirest.post(Constant.BASE_URL + "edit")
                 .header("Authorization", "Bearer " + access_token)
                 .header("accept", "application/json")
@@ -29,7 +29,7 @@ public class EditAccountTest {
         assertEquals("OK", res.message);
 
         //Try to login again with old password
-        String resWithOldPass = Utility.mockLogin(email, password);
+        String resWithOldPass = Utility.getAccessTokenForTest(email, password);
         assertEquals("Wrong user info", resWithOldPass);
     }
 
@@ -57,7 +57,7 @@ public class EditAccountTest {
 
 
         assertEquals("1001", res.code);
-        assertNotEquals("Wrong user info", Utility.mockLogin(anotherEmail, anotherPassword));
+        assertNotEquals("Wrong user info", Utility.getAccessTokenForTest(anotherEmail, anotherPassword));
 
     }
 
@@ -66,7 +66,7 @@ public class EditAccountTest {
         String email = userInfo.getKey();
         String password = userInfo.getValue();
 
-        String access_token = Utility.mockLogin(email, password);
+        String access_token = Utility.getAccessTokenForTest(email, password);
         ResponseDataAccount res = Unirest.post(Constant.BASE_URL + "edit")
                 .header("Authorization", "Bearer " + access_token)
                 .header("accept", "application/json")
