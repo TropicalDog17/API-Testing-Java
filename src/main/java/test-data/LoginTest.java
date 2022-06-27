@@ -1,5 +1,4 @@
 import kong.unirest.Unirest;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -10,13 +9,7 @@ class LoginTest {
     //covers: email, password: an already created account info.
     @Test
     public void LoginWithExistingAccount() {
-        ResponseWithAccessToken res = Unirest.post("https://auctions-app-2.herokuapp.com/api/login")
-                .field("email", "ludlz@gmail.com")
-                .field("password", "123456")
-                .asObject(ResponseWithAccessToken.class)//ObjectMapper
-                .getBody();
-
-        System.out.println(res.data.access_token);
+        Response res = doLogin("ludlz@gmail.com", "123456");
         Assertions.assertEquals("1000", res.code);
         Assertions.assertEquals("OK", res.message);
     }
@@ -24,24 +17,16 @@ class LoginTest {
     //covers: email, password: empty string
     @Test
     public void LoginWithNoInput() {
-        Response res = Unirest.post("https://auctions-app-2.herokuapp.com/api/login")
-                .field("email", "")
-                .field("password", "")
-                .asObject(Response.class)
-                .getBody();
-
+        Response res = doLogin("", "");
         Assertions.assertEquals("1001", res.code);
     }
+
 
     //covers: email: random email with correct format
     //        password: random password
     @Test
     public void LoginWithWrongInfo() {
-        Response res = Unirest.post("https://auctions-app-2.herokuapp.com/api/login")
-                .field("email", "fuckfuckfuckfuck@gmail.com")
-                .field("password", "bruhbruhlmao")
-                .asObject(Response.class)
-                .getBody();
+        Response res = doLogin("fuckfuckfuckfuck@gmail.com", "bruhbruhlmao");
         Assertions.assertEquals("1002", res.code);
     }
 
@@ -50,11 +35,15 @@ class LoginTest {
     //
     @Test
     public void LoginWithWrongEmailFormat() {
-        Response res = Unirest.post("https://auctions-app-2.herokuapp.com/api/login")
-                .field("email", "fuckfuckfuckfuck")
-                .field("password", "bruhbruhlmao")
+        Response res = doLogin("fuckfuckfuckfuck", "bruhbruhlmao");
+        Assertions.assertEquals("1001", res.code);
+    }
+
+    private Response doLogin(String email, String password) {
+        return Unirest.post("https://auctions-app-2.herokuapp.com/api/login")
+                .field("email", email)
+                .field("password", password)
                 .asObject(Response.class)
                 .getBody();
-        Assertions.assertEquals("1001", res.code);
     }
 }
