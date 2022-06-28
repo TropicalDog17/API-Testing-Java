@@ -1,15 +1,17 @@
-import kong.unirest.Unirest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 /**
  * Test for Login
  */
 class LoginTest {
     //covers: email, password: an already created account info.
-    @Test
-    public void LoginWithExistingAccount() {
-        Response res = doLogin("ludlz@gmail.com", "123456");
+    @ParameterizedTest
+    @CsvSource({"ludlz@gmail.com, 123456", "thanh12345@gmail.com, 123456"})
+    public void LoginWithExistingAccount(String email, String password) {
+        Response res = Utility.doLogin(email, password);
         Assertions.assertEquals("1000", res.code);
         Assertions.assertEquals("OK", res.message);
     }
@@ -17,7 +19,7 @@ class LoginTest {
     //covers: email, password: empty string
     @Test
     public void LoginWithNoInput() {
-        Response res = doLogin("", "");
+        Response res = Utility.doLogin("", "");
         Assertions.assertEquals("1001", res.code);
     }
 
@@ -26,7 +28,7 @@ class LoginTest {
     //        password: random password
     @Test
     public void LoginWithWrongInfo() {
-        Response res = doLogin("fuckfuckfuckfuck@gmail.com", "bruhbruhlmao");
+        Response res = Utility.doLogin("fuckfuckfuckfuck@gmail.com", "bruhbruhlmao");
         Assertions.assertEquals("1002", res.code);
     }
 
@@ -35,15 +37,9 @@ class LoginTest {
     //
     @Test
     public void LoginWithWrongEmailFormat() {
-        Response res = doLogin("fuckfuckfuckfuck", "bruhbruhlmao");
+        Response res = Utility.doLogin("fuckfuckfuckfuck", "bruhbruhlmao");
         Assertions.assertEquals("1001", res.code);
+        System.out.println(res.message);
     }
 
-    private Response doLogin(String email, String password) {
-        return Unirest.post("https://auctions-app-2.herokuapp.com/api/login")
-                .field("email", email)
-                .field("password", password)
-                .asObject(Response.class)
-                .getBody();
-    }
 }

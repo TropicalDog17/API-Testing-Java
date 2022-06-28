@@ -11,6 +11,7 @@ import java.util.*;
 
 import static org.junit.platform.engine.discovery.DiscoverySelectors.selectClass;
 import static org.junit.platform.engine.discovery.DiscoverySelectors.selectMethod;
+import static org.junit.platform.launcher.EngineFilter.includeEngines;
 
 public class RunTestFromMain {
     private String testSuiteName;
@@ -49,7 +50,7 @@ public class RunTestFromMain {
         } else {
             int intIndex = Integer.parseInt(index);
             request = LauncherDiscoveryRequestBuilder.request()
-                    .selectors(selectMethod(selectClass(testSuiteName).getJavaClass(), methodList[intIndex].getName())) //Run
+                    .selectors(selectMethod(selectClass(testSuiteName).getJavaClass(), methodList[intIndex].getName()))
                     .build();
         }
         Launcher launcher = LauncherFactory.create();

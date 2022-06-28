@@ -35,10 +35,10 @@ public class EditAccountTest {
 
     @Test
     void EditEmailAndPasswordCorrectly() {
-        ResponseDataAccount res = randomSignupLoginAndEdit(String.valueOf(new Utility.RandomEmail()), "3497234932", "3497234932", "Lol", "349028402384");
+        ResponseDataAccount res = randomSignupLoginAndEdit(Utility.getRandomEmail(20), "3497234932", "3497234932", "Lo4l", "349028402384");
+        System.out.println(res.message);
         assertEquals("1000", res.code);
         assertEquals("OK", res.message);
-
 
     }
 
@@ -67,7 +67,7 @@ public class EditAccountTest {
         String password = userInfo.getValue();
 
         String access_token = Utility.getAccessTokenForTest(email, password);
-        ResponseDataAccount res = Unirest.post(Constant.BASE_URL + "edit")
+        return Unirest.post(Constant.BASE_URL + "edit")
                 .header("Authorization", "Bearer " + access_token)
                 .header("accept", "application/json")
                 .field("email", newEmail)
@@ -77,6 +77,5 @@ public class EditAccountTest {
                 .field("phone", newPhone)
                 .asObject(ResponseDataAccount.class)
                 .getBody();
-        return res;
     }
 }

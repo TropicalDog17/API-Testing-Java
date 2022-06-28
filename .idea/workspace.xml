@@ -9,26 +9,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="refactor project directory">
-      <change afterPath="$PROJECT_DIR$/src/main/java/test-data/ParameterizedLoginTest.java" afterDir="false" />
+    <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="refactor getRandomEmail, add Parameterized test annotation">
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/org.example.untitled1.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/org.example.untitled1.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_55_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_55_AM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_56_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_56_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_11_11_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_11_11_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_11_17_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_11_17_AM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/EditAccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/EditAccountTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/GetListAuctionsByUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/GetListAuctionsByUserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/LogoutTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/LogoutTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/SearchTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SignupTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/SignupTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility$RandomEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility$RandomEmail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/LoginTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test-data/EditAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/EditAccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/GetListAuctionsByUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/GetListAuctionsByUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/LogoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/SignupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/SignupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/RunTestFromMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/RunTestFromMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Utility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,11 +76,15 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="parameterize-test" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -91,14 +101,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="recentNewPullRequestHead">
-      <RepoCoordinatesHolder>
-        <option name="owner" value="TropicalDog17" />
-        <option name="repository" value="test-automation" />
-      </RepoCoordinatesHolder>
-    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/build.gradle" root0="FORCE_HIGHLIGHTING" />
@@ -154,7 +156,11 @@
       <recent name="C:\Users\Tuan17\IdeaProjects\untitled1\untitled\src\main\java" />
     </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="Utility" />
       <recent name="Constant" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -166,16 +172,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParameterizedLoginTest.toUpperCase_ShouldGenerateTheExpectedUppercaseValue">
-    <configuration name="EditAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="org.example.untitled1.main" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EditAccountTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.EditAccountTest.EditEmailAndPasswordCorrectly">
     <configuration name="EditAccountTest.EditEmailAndPasswordCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="org.example.untitled1.main" />
       <option name="PACKAGE_NAME" value="" />
@@ -186,50 +183,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EditAccountTest.EditWithExistedEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.LoginWithExistingAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="org.example.untitled1.main" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EditAccountTest" />
-      <option name="METHOD_NAME" value="EditWithExistedEmail" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="METHOD_NAME" value="LoginWithExistingAccount(java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EditAccountTest.EditWithExistingEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.LoginWithWrongEmailFormat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="org.example.untitled1.main" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EditAccountTest" />
-      <option name="METHOD_NAME" value="EditWithExistingEmail" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="METHOD_NAME" value="LoginWithWrongEmailFormat" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParameterizedLoginTest.toUpperCase_ShouldGenerateTheExpectedUppercaseValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SignupTest.SignUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="org.example.untitled1.main" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParameterizedLoginTest" />
-      <option name="METHOD_NAME" value="toUpperCase_ShouldGenerateTheExpectedUppercaseValue(java.lang.String,java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="SignupTest" />
+      <option name="METHOD_NAME" value="SignUp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignupTest.SignUp2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="org.example.untitled1.main" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SignupTest" />
+      <option name="METHOD_NAME" value="SignUp2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.EditAccountTest.EditWithExistedEmail" />
-      <item itemvalue="JUnit.EditAccountTest" />
+      <item itemvalue="JUnit.LoginTest.LoginWithExistingAccount" />
+      <item itemvalue="JUnit.SignupTest.SignUp2" />
+      <item itemvalue="JUnit.SignupTest.SignUp" />
+      <item itemvalue="JUnit.LoginTest.LoginWithWrongEmailFormat" />
       <item itemvalue="JUnit.EditAccountTest.EditEmailAndPasswordCorrectly" />
-      <item itemvalue="JUnit.EditAccountTest.EditWithExistingEmail" />
-      <item itemvalue="JUnit.ParameterizedLoginTest.toUpperCase_ShouldGenerateTheExpectedUppercaseValue" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParameterizedLoginTest.toUpperCase_ShouldGenerateTheExpectedUppercaseValue" />
-        <item itemvalue="JUnit.EditAccountTest.EditWithExistingEmail" />
         <item itemvalue="JUnit.EditAccountTest.EditEmailAndPasswordCorrectly" />
-        <item itemvalue="JUnit.EditAccountTest" />
-        <item itemvalue="JUnit.EditAccountTest.EditWithExistedEmail" />
+        <item itemvalue="JUnit.LoginTest.LoginWithWrongEmailFormat" />
+        <item itemvalue="JUnit.SignupTest.SignUp2" />
+        <item itemvalue="JUnit.SignupTest.SignUp" />
+        <item itemvalue="JUnit.LoginTest.LoginWithExistingAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -286,10 +293,10 @@
       <workItem from="1655826998504" duration="593000" />
       <workItem from="1656226267143" duration="5914000" />
       <workItem from="1656300599376" duration="1166000" />
-      <workItem from="1656302800182" duration="1697000" />
-      <workItem from="1656304564231" duration="102000" />
-      <workItem from="1656318868612" duration="64000" />
-      <workItem from="1656336309274" duration="942000" />
+      <workItem from="1656377954434" duration="2029000" />
+      <workItem from="1656382567481" duration="4081000" />
+      <workItem from="1656387114227" duration="519000" />
+      <workItem from="1656413229892" duration="747000" />
     </task>
     <task id="LOCAL-00001" summary="Fix build.gradle">
       <created>1655626321811</created>
@@ -361,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656301696729</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="extracting doLogin method">
+      <created>1656337547730</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1656337547730</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +424,9 @@
     <MESSAGE value="Show assertionError on console when run tests" />
     <MESSAGE value="refactor display test results" />
     <MESSAGE value="refactor project directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor project directory" />
+    <MESSAGE value="extracting doLogin method" />
+    <MESSAGE value="refactor getRandomEmail, add Parameterized test annotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor getRandomEmail, add Parameterized test annotation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
