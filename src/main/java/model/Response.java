@@ -6,7 +6,7 @@ public class Response {
 }
 
 class ResponseDataAccount extends Response {
-    public DataAccount data;
+    public DataUser data;
 }
 
 class ResponseDataAuction extends Response {
@@ -27,4 +27,12 @@ class ResponseNews extends Response {
 
 class ResponseReadNews extends Response {
     public DataReadNews data;
+}
+
+class ResponseAcceptMaxBid extends Response {
+    public DataAcceptMaxBid data;
+}
+
+class ResponseCreateAuction extends Response {
+    public DataCreateAuction data;
 }

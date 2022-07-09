@@ -1,4 +1,4 @@
-class DataAccount {
+class DataUser {
     public String name;
     public String email;
     public String phone;

@@ -10,60 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="refactor getRandomEmail, add Parameterized test annotation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/DataNews.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/DataReadNews.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test-data/CreateAuctionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test-data/GetNewsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test-data/ReadNewsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/DataAcceptMaxBid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/DataCreateAuction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test-data/AcceptMaxBidsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/org.example.untitled1.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/org.example.untitled1.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_31_AM_[Changes]1/Utility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_31_AM_[Changes]1/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_31_AM_[Changes]1/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_31_AM_[Changes]1/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_31_AM_[Changes]1/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_31_AM_[Changes]1/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_31_AM_[Changes]1/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_31_AM_[Changes]1/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_31_AM_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_31_AM__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_55_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_55_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_56_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_10_56_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_11_11_AM_[Changes]/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_11_11_AM_[Changes]/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_11_11_AM_[Changes]/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_11_11_AM_[Changes]/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_11_11_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_11_11_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_11_17_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2022_11_17_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/EditAccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/EditAccountTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/GetListAuctionsByUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/GetListAuctionsByUserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/LoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/LogoutTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/LogoutTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/SearchTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SignupTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/SignupTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility$RandomEmail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ResponseDataAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ResponseDataAccount.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/DataAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/DataUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/GetListAuctionsByUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/GetListAuctionsByUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/LogoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/SearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/SignupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/SignupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/CreateAuctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/CreateAuctionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Utility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,12 +164,22 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReadNewsTest.readNewsWithAccessToken">
-    <configuration name="GetListAuctionsByUserTest.GetListAuctionsByNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CreateAuctionTest.CreateWithAccessToken">
+    <configuration name="AcceptMaxBidsTest.InitialTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="org.example.untitled1.main" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetListAuctionsByUserTest" />
-      <option name="METHOD_NAME" value="GetListAuctionsByNewUser" />
+      <option name="MAIN_CLASS_NAME" value="AcceptMaxBidsTest" />
+      <option name="METHOD_NAME" value="InitialTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateAuctionTest.CreateWithAccessToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="org.example.untitled1.main" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CreateAuctionTest" />
+      <option name="METHOD_NAME" value="CreateWithAccessToken" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -232,16 +205,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.LoginWithExistingAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="org.example.untitled1.main" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
-      <option name="METHOD_NAME" value="LoginWithExistingAccount(java.lang.String,java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ReadNewsTest.readNewsWithAccessToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="org.example.untitled1.main" />
       <option name="PACKAGE_NAME" value="" />
@@ -253,19 +216,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.LoginTest.LoginWithExistingAccount" />
-      <item itemvalue="JUnit.GetListAuctionsByUserTest.GetListAuctionsByNewUser" />
       <item itemvalue="JUnit.GetNewsTest.getNewsWithAccessToken" />
       <item itemvalue="JUnit.GetNewsTest.getNewsWithoutAccessToken" />
       <item itemvalue="JUnit.ReadNewsTest.readNewsWithAccessToken" />
+      <item itemvalue="JUnit.AcceptMaxBidsTest.InitialTest" />
+      <item itemvalue="JUnit.CreateAuctionTest.CreateWithAccessToken" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreateAuctionTest.CreateWithAccessToken" />
+        <item itemvalue="JUnit.AcceptMaxBidsTest.InitialTest" />
         <item itemvalue="JUnit.ReadNewsTest.readNewsWithAccessToken" />
         <item itemvalue="JUnit.GetNewsTest.getNewsWithoutAccessToken" />
         <item itemvalue="JUnit.GetNewsTest.getNewsWithAccessToken" />
-        <item itemvalue="JUnit.GetListAuctionsByUserTest.GetListAuctionsByNewUser" />
-        <item itemvalue="JUnit.LoginTest.LoginWithExistingAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +298,8 @@
       <workItem from="1656824027098" duration="5000" />
       <workItem from="1656988332968" duration="1686000" />
       <workItem from="1657283139313" duration="2943000" />
-      <workItem from="1657332903370" duration="1411000" />
+      <workItem from="1657332903370" duration="5085000" />
+      <workItem from="1657363455674" duration="1788000" />
     </task>
     <task id="LOCAL-00001" summary="Fix build.gradle">
       <created>1655626321811</created>

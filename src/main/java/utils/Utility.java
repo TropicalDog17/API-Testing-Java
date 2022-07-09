@@ -112,6 +112,12 @@ public class Utility {
 
     public static String getRandomEmail(int length) { //length: So ki tu bao gom ca @gmail.com
         if (length < 9) return "@gmail.com";
+        String generatedString = getRandomString(length - 9);
+
+        return generatedString.concat("@gmail.com");
+    }
+
+    public static String getRandomString(int length) {
         // create a string of uppercase and lowercase characters and numbers
         String upperAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String lowerAlphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -123,7 +129,7 @@ public class Utility {
         // create an object of Random class
         Random random = new Random();
         // specify length of random string
-        for (int i = 0; i < length - 9; i++) {
+        for (int i = 0; i < length; i++) {
 
             // generate random index number
             int index = random.nextInt(alphaNumeric.length());
@@ -135,11 +141,8 @@ public class Utility {
             // append the character to string builder
             sb.append(randomChar);
         }
-
-        return sb.toString()
-                .concat("@gmail.com");
+        return sb.toString();
     }
-
 
     private static void displayMenu() {
         System.out.println("==============MENU==============");
