@@ -20,3 +20,11 @@ class ResponseSearchResult extends Response {
 class ResponseWithAccessToken extends Response {
     public DataWithAccessToken data;
 }
+
+class ResponseNews extends Response {
+    public DataNews data;
+}
+
+class ResponseReadNews extends Response {
+    public DataReadNews data;
+}

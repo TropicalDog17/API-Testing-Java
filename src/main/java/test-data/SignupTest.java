@@ -21,9 +21,8 @@ public class SignupTest {
     void SignUp() {
         String randomEmail = Utility.getRandomEmail(8)
                 .concat("@gmail.com");
-        System.out.println(randomEmail);
         Response res = Unirest.post("https://auctions-app-2.herokuapp.com/api/signup")
-                .field("email", randomEmail)
+                .field("email", "randomEmail.com")
                 .field("password", "123456")
                 .field("re_pass", "123456")
                 .field("address", "")

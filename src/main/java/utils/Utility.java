@@ -20,6 +20,11 @@ public class Utility {
         return "Wrong user info";
     }
 
+    //Get default access token
+    public static String getAccessTokenForTest() {
+        return getAccessTokenForTest("luldz@gmail.com", "123456");
+    }
+
     public static String chooseBaseUrl() {
         Scanner sc = new Scanner(System.in);
         String baseUrl;
@@ -134,7 +139,7 @@ public class Utility {
         return sb.toString()
                 .concat("@gmail.com");
     }
-    
+
 
     private static void displayMenu() {
         System.out.println("==============MENU==============");

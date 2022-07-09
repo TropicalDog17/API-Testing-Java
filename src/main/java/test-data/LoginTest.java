@@ -9,7 +9,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 class LoginTest {
     //covers: email, password: an already created account info.
     @ParameterizedTest
-    @CsvSource({"ludlz@gmail.com, 123456", "thanh12345@gmail.com, 123456"})
+    @CsvSource({"luldz@gmail.com, 123456"})
     public void LoginWithExistingAccount(String email, String password) {
         Response res = Utility.doLogin(email, password);
         Assertions.assertEquals("1000", res.code);
