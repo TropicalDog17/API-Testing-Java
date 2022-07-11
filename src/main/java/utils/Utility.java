@@ -101,64 +101,58 @@ public class Utility {
         //Return credential for further use
         return new AbstractMap.SimpleEntry<>(randomEmail, "123456");
     }
-<<<<<<< HEAD
-    
-    public static class RandomEmail {
-        public static String getRandomEmail(int length) {
-=======
 
-    public static Response doLogin(String email, String password) {
-        return Unirest.post("https://auctions-app-2.herokuapp.com/api/login")
-                .field("email", email)
-                .field("password", password)
-                .asObject(Response.class)
-                .getBody();
-    }
->>>>>>> parameterize-test
-
-    public static String getRandomEmail(int length) { //length: So ki tu bao gom ca @gmail.com
-        if (length < 9) return "@gmail.com";
-        String generatedString = getRandomString(length - 9);
-
-        return generatedString.concat("@gmail.com");
-    }
-
-    public static String getRandomString(int length) {
-        // create a string of uppercase and lowercase characters and numbers
-        String upperAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        String lowerAlphabet = "abcdefghijklmnopqrstuvwxyz";
-        String numbers = "0123456789";
-        // combine all strings
-        String alphaNumeric = upperAlphabet + lowerAlphabet + numbers;
-        // create random string builder
-        StringBuilder sb = new StringBuilder();
-        // create an object of Random class
-        Random random = new Random();
-        // specify length of random string
-        for (int i = 0; i < length; i++) {
-
-            // generate random index number
-            int index = random.nextInt(alphaNumeric.length());
-
-            // get character specified by index
-            // from the string
-            char randomChar = alphaNumeric.charAt(index);
-
-            // append the character to string builder
-            sb.append(randomChar);
+        public static Response doLogin(String email, String password) {
+            return Unirest.post("https://auctions-app-2.herokuapp.com/api/login")
+                    .field("email", email)
+                    .field("password", password)
+                    .asObject(Response.class)
+                    .getBody();
         }
-        return sb.toString();
-    }
 
-    private static void displayMenu() {
-        System.out.println("==============MENU==============");
-        System.out.println("Choose base URL(0/1/2/3/4/Enter): ");
+        public static String getRandomEmail(int length) { //length: So ki tu bao gom ca @gmail.com
+            if (length < 9) return "@gmail.com";
+            String generatedString = getRandomString(length - 9);
 
-        System.out.println("Enter(0): https://auctions-app-2.herokuapp.com/api/");
-        System.out.println("1: https://auctions-app-2.herokuapp.com/api/auctions/");
-        System.out.println("2: https://auctions-app-2.herokuapp.com/api/comments/");
-        System.out.println("3: https://auctions-app-2.herokuapp.com/api/notifications/");
-        System.out.println("4: https://auctions-app-2.herokuapp.com/api/bid/");
-        System.out.println("5: https://auctions-app-2.herokuapp.com/api/news/");
+            return generatedString.concat("@gmail.com");
+        }
+
+        public static String getRandomString(int length) {
+            // create a string of uppercase and lowercase characters and numbers
+            String upperAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            String lowerAlphabet = "abcdefghijklmnopqrstuvwxyz";
+            String numbers = "0123456789";
+            // combine all strings
+            String alphaNumeric = upperAlphabet + lowerAlphabet + numbers;
+            // create random string builder
+            StringBuilder sb = new StringBuilder();
+            // create an object of Random class
+            Random random = new Random();
+            // specify length of random string
+            for (int i = 0; i < length; i++) {
+
+                // generate random index number
+                int index = random.nextInt(alphaNumeric.length());
+
+                // get character specified by index
+                // from the string
+                char randomChar = alphaNumeric.charAt(index);
+
+                // append the character to string builder
+                sb.append(randomChar);
+            }
+            return sb.toString();
+        }
+
+        private static void displayMenu() {
+            System.out.println("==============MENU==============");
+            System.out.println("Choose base URL(0/1/2/3/4/Enter): ");
+
+            System.out.println("Enter(0): https://auctions-app-2.herokuapp.com/api/");
+            System.out.println("1: https://auctions-app-2.herokuapp.com/api/auctions/");
+            System.out.println("2: https://auctions-app-2.herokuapp.com/api/comments/");
+            System.out.println("3: https://auctions-app-2.herokuapp.com/api/notifications/");
+            System.out.println("4: https://auctions-app-2.herokuapp.com/api/bid/");
+            System.out.println("5: https://auctions-app-2.herokuapp.com/api/news/");
+        }
     }
-}
