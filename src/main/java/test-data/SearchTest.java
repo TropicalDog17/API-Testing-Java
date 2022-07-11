@@ -33,7 +33,7 @@ public class SearchTest {
     }
 
     @Test
-    void SearchWithNoKeyword() {
+    void SearchWithNoKeywordAndNoAccessToken() {
         ResponseSearchResult res = Unirest.get(Constant.BASE_URL.concat("search"))
                 .queryString("type", "4")
                 .queryString("key", "")

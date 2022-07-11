@@ -35,7 +35,11 @@ public class EditAccountTest {
 
     @Test
     void EditEmailAndPasswordCorrectly() {
+<<<<<<< HEAD
         ResponseDataAccount res = randomSignupLoginAndEdit(Utility.RandomEmail.getRandomEmail(20), "3497234932", "3497234932", "Lo4l", "349028402384");
+=======
+        ResponseDataAccount res = randomSignupLoginAndEdit(Utility.getRandomEmail(20), "3497234932", "3497234932", "Lo4l", "349028402384");
+>>>>>>> parameterize-test
         System.out.println(res.message);
         assertEquals("1000", res.code);
         assertEquals("OK", res.message);

@@ -1,0 +1,28 @@
+Index: src/main/java/test-data/CreateAuctionTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import kong.unirest.Unirest;\r\nimport org.junit.jupiter.api.Test;\r\n\r\nimport java.time.LocalDateTime;\r\nimport java.time.format.DateTimeFormatter;\r\n\r\nimport static org.junit.jupiter.api.Assertions.assertEquals;\r\n\r\n\r\npublic class CreateAuctionTest {\r\n    @Test\r\n    public void CreateWithAccessToken() {\r\n        String access_token = Utility.getAccessTokenForTest();\r\n        DateTimeFormatter dtf = DateTimeFormatter.ofPattern(\"yyyy/MM/dd HH:mm:ss\");\r\n        LocalDateTime now = LocalDateTime.now();\r\n        LocalDateTime start_date = now.plusDays(1);\r\n        LocalDateTime end_date = now.plusDays(100);\r\n        ResponseCreateAuction res = Unirest.post(Constant.BASE_URL + \"auctions/create\")\r\n                .header(\"Authorization\", \"Bearer \" + access_token)\r\n                .queryString(\"category_id\", \"1\")\r\n                .queryString(\"start_date\", dtf.format(start_date))\r\n                .queryString(\"end_date\", dtf.format(end_date))\r\n                .queryString(\"title_ni\", Utility.getRandomString(10))\r\n                .asObject(ResponseCreateAuction.class)\r\n                .getBody();\r\n        assertEquals(\"1000\", res.code);\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/test-data/CreateAuctionTest.java b/src/main/java/test-data/CreateAuctionTest.java
+--- a/src/main/java/test-data/CreateAuctionTest.java	
++++ b/src/main/java/test-data/CreateAuctionTest.java	
+@@ -11,9 +11,11 @@
+     @Test
+     public void CreateWithAccessToken() {
+         String access_token = Utility.getAccessTokenForTest();
++        System.out.println(access_token);
+         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+         LocalDateTime now = LocalDateTime.now();
+-        LocalDateTime start_date = now.plusDays(1);
++        LocalDateTime start_date = now.plusDays(0)
++                .plusMinutes(1);
+         LocalDateTime end_date = now.plusDays(100);
+         ResponseCreateAuction res = Unirest.post(Constant.BASE_URL + "auctions/create")
+                 .header("Authorization", "Bearer " + access_token)
+@@ -24,5 +26,6 @@
+                 .asObject(ResponseCreateAuction.class)
+                 .getBody();
+         assertEquals("1000", res.code);
++        System.out.println(res.data.auction_id);
+     }
+ }

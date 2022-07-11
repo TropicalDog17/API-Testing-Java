@@ -20,6 +20,11 @@ public class Utility {
         return "Wrong user info";
     }
 
+    //Get default access token
+    public static String getAccessTokenForTest() {
+        return getAccessTokenForTest("luldz@gmail.com", "123456");
+    }
+
     public static String chooseBaseUrl() {
         Scanner sc = new Scanner(System.in);
         String baseUrl;
@@ -82,8 +87,7 @@ public class Utility {
      * @return AbstractMap.SimpleEntry<String, String>
      */
     public static AbstractMap.SimpleEntry<String, String> RandomSignup() {
-        String randomEmail = Utility.RandomEmail.getRandomEmail(8)
-                .concat("@gmail.com");
+        String randomEmail = getRandomEmail(20);
         Unirest.post("https://auctions-app-2.herokuapp.com/api/signup")
                 .field("email", randomEmail)
                 .field("password", "123456")
@@ -97,41 +101,53 @@ public class Utility {
         //Return credential for further use
         return new AbstractMap.SimpleEntry<>(randomEmail, "123456");
     }
+<<<<<<< HEAD
     
     public static class RandomEmail {
         public static String getRandomEmail(int length) {
+=======
 
-            // create a string of uppercase and lowercase characters and numbers
-            String upperAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            String lowerAlphabet = "abcdefghijklmnopqrstuvwxyz";
-            String numbers = "0123456789";
+    public static Response doLogin(String email, String password) {
+        return Unirest.post("https://auctions-app-2.herokuapp.com/api/login")
+                .field("email", email)
+                .field("password", password)
+                .asObject(Response.class)
+                .getBody();
+    }
+>>>>>>> parameterize-test
 
-            // combine all strings
-            String alphaNumeric = upperAlphabet + lowerAlphabet + numbers;
+    public static String getRandomEmail(int length) { //length: So ki tu bao gom ca @gmail.com
+        if (length < 9) return "@gmail.com";
+        String generatedString = getRandomString(length - 9);
 
-            // create random string builder
-            StringBuilder sb = new StringBuilder();
+        return generatedString.concat("@gmail.com");
+    }
 
-            // create an object of Random class
-            Random random = new Random();
+    public static String getRandomString(int length) {
+        // create a string of uppercase and lowercase characters and numbers
+        String upperAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String lowerAlphabet = "abcdefghijklmnopqrstuvwxyz";
+        String numbers = "0123456789";
+        // combine all strings
+        String alphaNumeric = upperAlphabet + lowerAlphabet + numbers;
+        // create random string builder
+        StringBuilder sb = new StringBuilder();
+        // create an object of Random class
+        Random random = new Random();
+        // specify length of random string
+        for (int i = 0; i < length; i++) {
 
-            // specify length of random string
+            // generate random index number
+            int index = random.nextInt(alphaNumeric.length());
 
-            for (int i = 0; i < length; i++) {
+            // get character specified by index
+            // from the string
+            char randomChar = alphaNumeric.charAt(index);
 
-                // generate random index number
-                int index = random.nextInt(alphaNumeric.length());
-
-                // get character specified by index
-                // from the string
-                char randomChar = alphaNumeric.charAt(index);
-
-                // append the character to string builder
-                sb.append(randomChar);
-            }
-
-            return sb.toString();
+            // append the character to string builder
+            sb.append(randomChar);
         }
+        return sb.toString();
     }
 
     private static void displayMenu() {
