@@ -13,6 +13,5 @@ public class AcceptMaxBidsTest {
                 .asObject(ResponseAcceptMaxBid.class)
                 .getBody();
         assertEquals("1000", res.code);
-
     }
 }

@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 public class GetCategoriesTest {
     @Test
     public void getCategories() {
-        Response res = Unirest.get("https://auction-app3.herokuapp.com/api/categories")
+        Response res = Unirest.get("https://auctions-app-2.herokuapp.com/api/categories")
                 .asObject(Response.class)
                 .getBody();
         assertEquals("1000", res.code);

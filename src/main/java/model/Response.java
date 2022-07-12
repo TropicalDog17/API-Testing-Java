@@ -36,3 +36,6 @@ class ResponseAcceptMaxBid extends Response {
 class ResponseCreateAuction extends Response {
     public DataCreateAuction data;
 }
+class ResponseChatList extends Response{
+    public DataChat data;
+}

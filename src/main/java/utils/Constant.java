@@ -8,6 +8,8 @@ public class Constant {
     private final static ArrayList<String> bidEndpoints = new ArrayList<>(Arrays.asList("create" + "/{auctionId}", "{auctionId}"));
     private final static ArrayList<String> newsEndpoints = new ArrayList<>(Arrays.asList("", "read/{newId}"));
     static final String BASE_URL = "https://auctions-app-2.herokuapp.com/api/";
+    /** Access_code su dung chung*/
+    public static String PUBLIC_ACCESS_CODE = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU3NjEyMDI1LCJleHAiOjE2NTc5NzIwMjUsIm5iZiI6MTY1NzYxMjAyNSwianRpIjoibER5N1owajVPZTNFWFdDaSIsInN1YiI6NDkwLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.JvKK7Sdcwe22X05ifEuQgJzTt0E1hu3uUoPT31v1C08";
     public static final HashMap<String, String> BASE_URL_LIST = new HashMap<>() {{
         put("0", "https://auctions-app-2.herokuapp.com/api/");
         put("1", "https://auctions-app-2.herokuapp.com/api/auctions/");

@@ -10,11 +10,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CreateAuctionTest {
     @Test
     public void CreateWithAccessToken() {
-        String access_token = Utility.getAccessTokenForTest();
+        String access_token = Constant.PUBLIC_ACCESS_CODE;
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
         LocalDateTime start_date = now.plusDays(1);
         LocalDateTime end_date = now.plusDays(100);
+
         ResponseCreateAuction res = Unirest.post(Constant.BASE_URL + "auctions/create")
                 .header("Authorization", "Bearer " + access_token)
                 .queryString("category_id", "1")
@@ -24,5 +25,6 @@ public class CreateAuctionTest {
                 .asObject(ResponseCreateAuction.class)
                 .getBody();
         assertEquals("1000", res.code);
+        System.out.println(res.data.auction_id);
     }
 }
