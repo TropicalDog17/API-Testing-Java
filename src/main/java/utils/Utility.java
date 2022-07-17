@@ -22,7 +22,7 @@ public class Utility {
 
     //Get default access token
     public static String getAccessTokenForTest() {
-        return getAccessTokenForTest("luldz@gmail.com", "123456");
+        return getAccessTokenForTest("oop123@gmail.com", "123456");
     }
 
     public static String chooseBaseUrl() {

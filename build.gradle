@@ -31,6 +31,7 @@ sourceSets {
             srcDirs "src/main/java/utils"
             srcDirs "src/main/java/model"
             srcDirs "src/main/java/model/data"
+            srcDirs "src/main/java/model/response"
         }
     }
 }

@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CreateAuctionTest {
     @Test
     public void CreateWithAccessToken() {
-        String access_token = Constant.PUBLIC_ACCESS_CODE;
+        String access_token = Utility.getAccessTokenForTest();
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
         LocalDateTime start_date = now.plusDays(1);
