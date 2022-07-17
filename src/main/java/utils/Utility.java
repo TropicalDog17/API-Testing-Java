@@ -22,7 +22,7 @@ public class Utility {
 
     //Get default access token
     public static String getAccessTokenForTest() {
-        return getAccessTokenForTest("oop123@gmail.com", "123456");
+        return getAccessTokenForTest("oop123456@gmail.com", "123456");
     }
 
     public static String chooseBaseUrl() {
@@ -109,7 +109,7 @@ public class Utility {
                     .asObject(Response.class)
                     .getBody();
         }
-
+        /** length should be equal or greater than 9*/
         public static String getRandomEmail(int length) { //length: So ki tu bao gom ca @gmail.com
             if (length < 9) return "@gmail.com";
             String generatedString = getRandomString(length - 9);

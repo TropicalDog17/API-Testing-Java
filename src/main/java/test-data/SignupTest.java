@@ -19,10 +19,9 @@ public class SignupTest {
     //cover properly signup
     @Test
     void SignUp() {
-        String randomEmail = Utility.getRandomEmail(8)
-                .concat("@gmail.com");
+        String randomEmail = Utility.getRandomEmail(10);
         Response res = Unirest.post("https://auctions-app-2.herokuapp.com/api/signup")
-                .field("email", "randomEmail.com")
+                .field("email", randomEmail)
                 .field("password", "123456")
                 .field("re_pass", "123456")
                 .field("address", "")
@@ -31,6 +30,8 @@ public class SignupTest {
                 .field("avatar", "")
                 .asObject(Response.class)
                 .getBody();
+        System.out.println(res.message);
+
         assertEquals("1000", res.code);
         assertEquals("OK", res.message);
     }
