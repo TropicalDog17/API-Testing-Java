@@ -25,11 +25,11 @@ public class GetNewsTest {
     @Test
     public void getNewsWithoutAccessToken() {
         ResponseNews res = Unirest.get(Constant.BASE_URL + "news")
-                .queryString("index", "0")
+                .queryString("index", "1")
                 .queryString("count", "1")
                 .asObject(ResponseNews.class)
                 .getBody();
-        assertNotEquals("1000", res.code);
+        assertEquals("1000", res.code);
         
     }
 }

@@ -42,4 +42,6 @@ public class SearchTest {
         assertEquals("9998", res.code);
         assertNull(res.data);
     }
+
 }
+
