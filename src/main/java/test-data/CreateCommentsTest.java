@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 public class CreateCommentsTest {
     @Test
     public void CreateCommentsLogin1(){
-
         String access_token = Utility.getAccessTokenForTest("bachtx@gmail.com", "12345");
         ResponeCreateComments res = Unirest.post(Constant.BASE_URL + "comments/create/1641")
                 .header("Authorization", "Bearer " + access_token)

@@ -1,3 +1,3 @@
 public class ResponseDeleteCommnets extends Response {
-    public DataDeleteComment data;
+    public String data;
 }
