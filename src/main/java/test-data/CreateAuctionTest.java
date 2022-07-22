@@ -19,7 +19,7 @@ public class CreateAuctionTest {
         ResponseCreateAuction res = Unirest.post(Constant.BASE_URL + "auctions/create")
                 .header("Authorization", "Bearer " + access_token)
                 .queryString("category_id", "1")
-                .queryString("start_date", dtf.format(start_date))
+                .queryString("start_dacategory_idte", dtf.format(start_date))
                 .queryString("end_date", dtf.format(end_date))
                 .queryString("title_ni", Utility.getRandomString(10))
                 .asObject(ResponseCreateAuction.class)

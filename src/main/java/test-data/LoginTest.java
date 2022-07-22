@@ -28,7 +28,7 @@ class LoginTest {
     //        password: random password
     @Test
     public void LoginWithWrongInfo() {
-        Response res = Utility.doLogin("fuckfuckfuckfuck@gmail.com", "bruhbruhlmao");
+        Response res = Utility.doLogin("bchdhsjss@gmail.com", "bruhbruhlmao");
         Assertions.assertEquals("1002", res.code);
     }
 
@@ -37,9 +37,8 @@ class LoginTest {
     //
     @Test
     public void LoginWithWrongEmailFormat() {
-        Response res = Utility.doLogin("fuckfuckfuckfuck", "bruhbruhlmao");
+        Response res = Utility.doLogin("faasddddffff", "bruhbruhlmao");
         Assertions.assertEquals("1001", res.code);
         System.out.println(res.message);
     }
-
 }
