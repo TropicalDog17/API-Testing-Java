@@ -52,4 +52,18 @@ public class SignupTest {
                 .getBody();
         System.out.println(res.message);
     }
+    @Test
+    void SignUp3() {
+        Response res = Unirest.post("https://auctions-app-2.herokuapp.com/api/signup")
+                .field("email", "annm@@gmail.com")
+                .field("password", "123456")
+                .field("re_pass", "123456")
+                .field("address", "")
+                .field("name", "Tuan Tran")
+                .field("phone", "034209874")
+                .field("avatar", "")
+                .asObject(Response.class)
+                .getBody();
+        System.out.println(res.message);
+    }
 }
