@@ -8,12 +8,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ChangePassTest {
     @Test
     public void ChangePassWithCorrectInput() {
-        String access_token = Utility.getAccessTokenForTest("bachtx@gmail.com", "123123");
+        String access_token = Utility.getAccessTokenForTest("bachtx@gmail.com", "12345");
         Response res = Unirest.post(Constant.BASE_URL + "changepass")
                 .header("Authorization", "Bearer" + access_token)
-                .queryString("old_pass", "123123")
-                .queryString("new_pass", "123123")
-                .queryString("re_pass", "123123")
+                .queryString("old_pass", "12345")
+                .queryString("new_pass", "12345")
+                .queryString("re_pass", "12345")
                 .asObject(Response.class)
                 .getBody();
         assertEquals("1000", res.code);
@@ -36,7 +36,7 @@ public class ChangePassTest {
 
     @Test
     public void ChangePassWithNoInput() {
-        String access_token = Utility.getAccessTokenForTest("bachtx@gmail.com", "123123");
+        String access_token = Utility.getAccessTokenForTest("bachtx@gmail.com", "12345");
         Response res = Unirest.post(Constant.BASE_URL + "changepass")
                 .header("Authorization", "Bearer" + access_token)
                 .queryString("old_pass", "")
