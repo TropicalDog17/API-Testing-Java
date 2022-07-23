@@ -1,6 +1,7 @@
 import kong.unirest.Unirest;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestTemplate;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -53,14 +54,56 @@ public class SignupTest {
         System.out.println(res.message);
     }
     @Test
-    void SignUp3() {
+    void SignUpWithWrongEmailAndPhone() {
         Response res = Unirest.post("https://auctions-app-2.herokuapp.com/api/signup")
                 .field("email", "annm@@gmail.com")
                 .field("password", "123456")
                 .field("re_pass", "123456")
                 .field("address", "")
                 .field("name", "Tuan Tran")
+                .field("phone", "A9388883")
+                .field("avatar", "")
+                .asObject(Response.class)
+                .getBody();
+        System.out.println(res.message);
+    }
+    @Test
+    void SignUpWithOversize() {
+        Response res = Unirest.post(Constant.BASE_URL + "signup")
+                .field("email", Utility.getRandomString(260)+"@gmail.com")
+                .field("password", Utility.getRandomString(260))
+                .field("re_pass", Utility.getRandomString(260))
+                .field("address", Utility.getRandomString(260))
+                .field("name", Utility.getRandomString(260))
+                .field("phone", Utility.getRandomPhone(90))
+                .field("avatar", Utility.getRandomString(260))
+                .asObject(Response.class)
+                .getBody();
+        System.out.println(res.message);
+    }
+    @Test
+    void SignUpAccountWasCreated() {
+        Response res = Unirest.post("https://auctions-app-2.herokuapp.com/api/signup")
+                .field("email", "bachtx@gmail.com")
+                .field("password", "123456")
+                .field("re_pass", "123456")
+                .field("address", "")
+                .field("name", "Bach Tran")
                 .field("phone", "034209874")
+                .field("avatar", "")
+                .asObject(Response.class)
+                .getBody();
+        System.out.println(res.message);
+    }
+    @Test
+    void SignUpWithNoInput() {
+        Response res = Unirest.post("https://auctions-app-2.herokuapp.com/api/signup")
+                .field("email", "" )
+                .field("password", "")
+                .field("re_pass", "")
+                .field("address", "")
+                .field("name", "")
+                .field("phone", "")
                 .field("avatar", "")
                 .asObject(Response.class)
                 .getBody();
