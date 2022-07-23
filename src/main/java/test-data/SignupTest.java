@@ -19,8 +19,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SignupTest {
     //cover properly signup
     @Test
-    void SignUp() {
-        String randomEmail = Utility.getRandomEmail(10);
+    void SignUpSuccessfully() {
+        String randomEmail = Utility.getRandomEmail(20);
         Response res = Unirest.post("https://auctions-app-2.herokuapp.com/api/signup")
                 .field("email", randomEmail)
                 .field("password", "123456")
@@ -28,7 +28,6 @@ public class SignupTest {
                 .field("address", "")
                 .field("name", "Tuan Tran")
                 .field("phone", "034209874")
-                .field("avatar", "")
                 .asObject(Response.class)
                 .getBody();
         System.out.println(res.message);
@@ -37,22 +36,6 @@ public class SignupTest {
         assertEquals("OK", res.message);
     }
 
-    @Test
-    void SignUp2() {
-        String randomEmail = Utility.getRandomEmail(220);
-        System.out.println(randomEmail);
-        Response res = Unirest.post("https://auctions-app-2.herokuapp.com/api/signup")
-                .field("email", randomEmail)
-                .field("password", "123456")
-                .field("re_pass", "123456")
-                .field("address", "")
-                .field("name", "Tuan Tran")
-                .field("phone", "034209874")
-                .field("avatar", "")
-                .asObject(Response.class)
-                .getBody();
-        System.out.println(res.message);
-    }
     @Test
     void SignUpWithWrongEmailAndPhone() {
         Response res = Unirest.post("https://auctions-app-2.herokuapp.com/api/signup")
@@ -65,12 +48,13 @@ public class SignupTest {
                 .field("avatar", "")
                 .asObject(Response.class)
                 .getBody();
-        System.out.println(res.message);
+        assertEquals("1001", res.code);
     }
+
     @Test
     void SignUpWithOversize() {
         Response res = Unirest.post(Constant.BASE_URL + "signup")
-                .field("email", Utility.getRandomString(260)+"@gmail.com")
+                .field("email", Utility.getRandomString(260) + "@gmail.com")
                 .field("password", Utility.getRandomString(260))
                 .field("re_pass", Utility.getRandomString(260))
                 .field("address", Utility.getRandomString(260))
@@ -79,8 +63,9 @@ public class SignupTest {
                 .field("avatar", Utility.getRandomString(260))
                 .asObject(Response.class)
                 .getBody();
-        System.out.println(res.message);
+        assertEquals("1001", res.code);
     }
+
     @Test
     void SignUpAccountWasCreated() {
         Response res = Unirest.post("https://auctions-app-2.herokuapp.com/api/signup")
@@ -93,12 +78,13 @@ public class SignupTest {
                 .field("avatar", "")
                 .asObject(Response.class)
                 .getBody();
-        System.out.println(res.message);
+        assertEquals("1001", res.code);
     }
+
     @Test
     void SignUpWithNoInput() {
         Response res = Unirest.post("https://auctions-app-2.herokuapp.com/api/signup")
-                .field("email", "" )
+                .field("email", "")
                 .field("password", "")
                 .field("re_pass", "")
                 .field("address", "")
@@ -107,6 +93,6 @@ public class SignupTest {
                 .field("avatar", "")
                 .asObject(Response.class)
                 .getBody();
-        System.out.println(res.message);
+        assertEquals("1001", res.code);
     }
 }

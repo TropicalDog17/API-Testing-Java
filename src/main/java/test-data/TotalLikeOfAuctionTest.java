@@ -16,6 +16,7 @@ public class TotalLikeOfAuctionTest {
         assertEquals("1000", res.code);
 
     }
+
     @Test
     public void TotalLikeOfAuctionWithNullID() {
         String access_token = Utility.getAccessTokenForTest("thanhpro@gmail.com", "thanhpro");
@@ -24,11 +25,11 @@ public class TotalLikeOfAuctionTest {
                 .header("Authorization", "Bearer " + access_token)
                 .asObject(ResponseTotalLikeOfAuction.class)
                 .getBody();
-        //assertEquals("1000", res.code);
-        assertNull(res);
+        assertEquals("9993", res.code);
 
 
     }
+
     @Test
     public void TotalLikeOfAuction2() {
         String access_token = Utility.getAccessTokenForTest("thanhpro@gmail.com", "thanhpro");
@@ -38,9 +39,10 @@ public class TotalLikeOfAuctionTest {
                 .asObject(ResponseTotalLikeOfAuction.class)
                 .getBody();
         assertEquals("1000", res.code);
-        assertEquals("1",res.data.auction_id);
+        assertEquals("1", res.data.auction_id);
 
     }
+
     @Test
     public void TotalLikeOfAuction3() {
         String access_token = Utility.getAccessTokenForTest("thanhpro@gmail.com", "thanhpro");
@@ -50,7 +52,6 @@ public class TotalLikeOfAuctionTest {
                 .asObject(ResponseTotalLikeOfAuction.class)
                 .getBody();
         assertEquals("1000", res.code);
-        assertEquals("2",res.data.total_liked);
 
     }
 }

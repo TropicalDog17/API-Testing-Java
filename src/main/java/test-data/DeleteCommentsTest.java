@@ -36,14 +36,29 @@ public class DeleteCommentsTest {
                 .getBody();
         assertNull(res);
     }
-    /*@Test
+    @Test
     public void XoaduocCommnets(){
-        String access_token = Utility.getAccessTokenForTest("bachtx@gmai.com","12345");
-        int commentId = 977;
-        ResponseDeleteCommnets res = Unirest.post(Constant.BASE_URL +"comments/delete/" + commentId)
+        String access_token = Utility.getAccessTokenForTest("bachtx@gmail.com","12345");
+        System.out.println(access_token);
+        String commentId = Utility.createComment(access_token);
+        System.out.println(commentId);
+
+        ResponseDeleteCommnets res = Unirest.post(Constant.BASE_URL +"comments/delete/" + commentId )
                 .header("Authorization", "Bearer " + access_token)
+                .header("Accept", "application/json")
                 .asObject(ResponseDeleteCommnets.class)
                 .getBody();
         assertEquals("1000",res.code);
-    }*/
+    }
+    @Test
+    public void XoaCommentKoTonTai(){
+
+        String access_token = Utility.getAccessTokenForTest();
+        ResponseDeleteCommnets res = Unirest.post(Constant.BASE_URL +"comments/delete/2231411" )
+                .header("Authorization", "Bearer " + access_token)
+                .header("Accept", "application/json")
+                .asObject(ResponseDeleteCommnets.class)
+                .getBody();
+        assertEquals("9993",res.code);
+    }
 }

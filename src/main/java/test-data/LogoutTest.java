@@ -11,9 +11,9 @@ public class LogoutTest {
         //LoginRequired
     void LogoutWhenAlreadySignedIn() {
         //Login using an existing account
-        String access_token = Utility.getAccessTokenForTest("luldz@gmail.com", "123456");
+        String access_token = Utility.getAccessTokenForTest("bachtx@gmail.com", "12345");
         //test for logout functionality
-        ResponseWithAccessToken logoutResponse = Unirest.post("https://auctions-app-2.herokuapp" + ".com/api/logout")
+        ResponseWithAccessToken logoutResponse = Unirest.post(Constant.BASE_URL + "logout")
                 .header("accept", "application/json")
                 .header("Authorization", "Bearer " + access_token)
                 .asObject(ResponseWithAccessToken.class)
@@ -23,4 +23,15 @@ public class LogoutTest {
         assertNull(logoutResponse.data);
     }
 
+    @Test
+    void LogoutWithoutAccessToken() {
+        String access_token = Utility.getAccessTokenForTest("annm22222@gmail.com", "12345");
+        ResponseWithAccessToken logoutResponse = Unirest.post("https://auctions-app-2.herokuapp" + ".com/api/logout")
+                .header("accept", "application/json")
+                .header("Authorization", "Bearer" + access_token)
+                .asObject(ResponseWithAccessToken.class)
+                .getBody();
+        System.out.println(logoutResponse.code);
+        System.out.println(logoutResponse.message);
+    }
 }

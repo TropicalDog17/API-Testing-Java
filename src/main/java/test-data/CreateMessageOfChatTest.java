@@ -5,22 +5,29 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class CreateMessageOfChatTest {
     @Test
-    public void CreateMessageWithAccessToken(){
+    public void CreateMessageWithAccessToken() {
         String access_token = Utility.getAccessTokenForTest();
-        ResponseCreateMessageOfChat res =
-                Unirest.post(Constant.BASE_URL + "chat/message").header("Authorization",
-                        "Bearer " + access_token).queryString("chat_id",
-                        "3").queryString("content", "lol").queryString("user_send_id", Constant.USER_ID).asObject(ResponseCreateMessageOfChat.class).getBody();
+        ResponseCreateMessageOfChat res = Unirest.post(Constant.BASE_URL + "chat/message")
+                .header("Authorization", "Bearer " + access_token)
+                .queryString("chat_id", "3")
+                .queryString("content", "lol")
+                .queryString("user_send_id", Constant.USER_ID)
+                .asObject(ResponseCreateMessageOfChat.class)
+                .getBody();
         assertEquals("1000", res.code);
     }
+
     @Test
-    public void CreateMessageWithoutAccessToken(){
+    public void CreateMessageWithoutAccessToken() {
         String access_token = "123";
-        ResponseCreateMessageOfChat res =
-                Unirest.post(Constant.BASE_URL + "chat/message").header("Authorization",
-                        "Bearer " + access_token).queryString("chat_id",
-                        "3").queryString("content", "lol").queryString("user_send_id", Constant.USER_ID).asObject(ResponseCreateMessageOfChat.class).getBody();
-        assertNotEquals(null, res);
-        assertEquals("1004", res.code);
+        ResponseCreateMessageOfChat res = Unirest.post(Constant.BASE_URL + "chat/message")
+                .header("Authorization", "Bearer " + access_token)
+                .queryString("chat_id", "3")
+                .queryString("content", "lol")
+                .queryString("user_send_id", Constant.USER_ID)
+                .asObject(ResponseCreateMessageOfChat.class)
+                .getBody();
+        assertNull(res);
+
     }
 }
