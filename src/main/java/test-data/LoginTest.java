@@ -8,10 +8,9 @@ import org.junit.jupiter.params.provider.CsvSource;
  */
 class LoginTest {
     //covers: email, password: an already created account info.
-    @ParameterizedTest
-    @CsvSource({"luldz@gmail.com, 123456"})
-    public void LoginWithExistingAccount(String email, String password) {
-        Response res = Utility.doLogin(email, password);
+    @Test
+    public void LoginWithExistingAccount() {
+        Response res = Utility.doLogin("oop123456@gmail.com", "123456");
         Assertions.assertEquals("1000", res.code);
         Assertions.assertEquals("OK", res.message);
     }
@@ -28,7 +27,7 @@ class LoginTest {
     //        password: random password
     @Test
     public void LoginWithWrongInfo() {
-        Response res = Utility.doLogin("fuckfuckfuckfuck@gmail.com", "bruhbruhlmao");
+        Response res = Utility.doLogin("bchdhsjss@gmail.com", "bruhbruhlmao");
         Assertions.assertEquals("1002", res.code);
     }
 
@@ -37,9 +36,7 @@ class LoginTest {
     //
     @Test
     public void LoginWithWrongEmailFormat() {
-        Response res = Utility.doLogin("fuckfuckfuckfuck", "bruhbruhlmao");
+        Response res = Utility.doLogin("faasddddffff", "bruhbruhlmao");
         Assertions.assertEquals("1001", res.code);
-        System.out.println(res.message);
     }
-
 }

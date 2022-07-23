@@ -18,6 +18,7 @@ public class ChangePassTest {
                 .getBody();
         assertEquals("1000", res.code);
     }
+
     @Test
     public void ChangePassWithoutAccessToken() {
         String access_token = new String();
@@ -29,9 +30,10 @@ public class ChangePassTest {
                 .queryString("re_pass", "123123")
                 .asObject(Response.class)
                 .getBody();
-        System.out.println(res.code);
-        System.out.println(res.message);
+//        System.out.println(res.code);
+//        System.out.println(res.message);
     }
+
     @Test
     public void ChangePassWithNoInput() {
         String access_token = Utility.getAccessTokenForTest("bachtx@gmail.com", "123123");
@@ -43,7 +45,6 @@ public class ChangePassTest {
                 .asObject(Response.class)
                 .getBody();
         assertEquals("1001", res.code);
-        System.out.println(res.message);
     }
 
 

@@ -2,40 +2,35 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="untitled1:jar" />
+      <artifact name="untitled1:jar3" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="refactor project directory">
-=======
-    <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="refactor getRandomEmail, add Parameterized test annotation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/DataAcceptMaxBid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/DataCreateAuction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test-data/AcceptMaxBidsTest.java" afterDir="false" />
->>>>>>> parameterize-test
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/untitled1_jar2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/untitled1_jar3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SignupTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/SignupTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ResponseDataAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ResponseDataAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/DataAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/DataUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/CreateAuctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/CreateAuctionTest.java" afterDir="false" />
->>>>>>> parameterize-test
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Utility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/ChangePassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/ChangePassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/SignupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/SignupTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +84,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="parameterize-test" />
+        <entry key="$PROJECT_DIR$" value="NguyenMinhAn" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,6 +96,13 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/build.gradle" root0="FORCE_HIGHLIGHTING" />
@@ -129,6 +131,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -139,7 +142,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15625" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -172,8 +175,7 @@
       <recent name="" />
     </key>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.ChangePassTest.ChangePassWithoutAccessToken">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="org.example.untitled1.main" />
@@ -181,25 +183,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EditAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-=======
-  <component name="RunManager" selected="JUnit.CreateAuctionTest.CreateWithAccessToken">
-    <configuration name="AcceptMaxBidsTest.InitialTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
->>>>>>> parameterize-test
+    <configuration name="AcceptMaxBidsTest.AcceptMaxBidsTestWithoutLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="org.example.untitled1.main" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AcceptMaxBidsTest" />
-      <option name="METHOD_NAME" value="InitialTest" />
+      <option name="METHOD_NAME" value="AcceptMaxBidsTestWithoutLogin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateAuctionTest.CreateWithAccessToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChangePassTest.ChangePassWithoutAccessToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="org.example.untitled1.main" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateAuctionTest" />
-      <option name="METHOD_NAME" value="CreateWithAccessToken" />
+      <option name="MAIN_CLASS_NAME" value="ChangePassTest" />
+      <option name="METHOD_NAME" value="ChangePassWithoutAccessToken" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -215,57 +213,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.EditAccountTest.EditWithExistedEmail" />
-      <item itemvalue="JUnit.EditAccountTest" />
-      <item itemvalue="JUnit.EditAccountTest.EditEmailAndPasswordCorrectly" />
-      <item itemvalue="JUnit.EditAccountTest.EditWithExistingEmail" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.EditAccountTest.EditWithExistingEmail" />
-        <item itemvalue="JUnit.EditAccountTest.EditEmailAndPasswordCorrectly" />
-        <item itemvalue="JUnit.EditAccountTest" />
-        <item itemvalue="JUnit.EditAccountTest.EditWithExistedEmail" />
-        <item itemvalue="Application.Main" />
-=======
-    <configuration name="GetNewsTest.getNewsWithoutAccessToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="org.example.untitled1.main" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetNewsTest" />
-      <option name="METHOD_NAME" value="getNewsWithoutAccessToken" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadNewsTest.readNewsWithAccessToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="org.example.untitled1.main" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ReadNewsTest" />
-      <option name="METHOD_NAME" value="readNewsWithAccessToken" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="JUnit.GetNewsTest.getNewsWithAccessToken" />
-      <item itemvalue="JUnit.GetNewsTest.getNewsWithoutAccessToken" />
-      <item itemvalue="JUnit.ReadNewsTest.readNewsWithAccessToken" />
-      <item itemvalue="JUnit.AcceptMaxBidsTest.InitialTest" />
-      <item itemvalue="JUnit.CreateAuctionTest.CreateWithAccessToken" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.LoginTest" />
+      <item itemvalue="JUnit.AcceptMaxBidsTest.AcceptMaxBidsTestWithoutLogin" />
+      <item itemvalue="JUnit.ChangePassTest.ChangePassWithoutAccessToken" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreateAuctionTest.CreateWithAccessToken" />
-        <item itemvalue="JUnit.AcceptMaxBidsTest.InitialTest" />
-        <item itemvalue="JUnit.ReadNewsTest.readNewsWithAccessToken" />
-        <item itemvalue="JUnit.GetNewsTest.getNewsWithoutAccessToken" />
+        <item itemvalue="JUnit.ChangePassTest.ChangePassWithoutAccessToken" />
+        <item itemvalue="JUnit.AcceptMaxBidsTest.AcceptMaxBidsTestWithoutLogin" />
+        <item itemvalue="JUnit.LoginTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.GetNewsTest.getNewsWithAccessToken" />
->>>>>>> parameterize-test
       </list>
     </recent_temporary>
   </component>
@@ -337,6 +307,7 @@
       <workItem from="1657283139313" duration="2943000" />
       <workItem from="1657332903370" duration="5085000" />
       <workItem from="1657363455674" duration="1788000" />
+      <workItem from="1658579033906" duration="1374000" />
     </task>
     <task id="LOCAL-00001" summary="Fix build.gradle">
       <created>1655626321811</created>
@@ -474,6 +445,27 @@
     <MESSAGE value="extracting doLogin method" />
     <MESSAGE value="refactor getRandomEmail, add Parameterized test annotation" />
     <option name="LAST_COMMIT_MESSAGE" value="refactor getRandomEmail, add Parameterized test annotation" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/test-data/CreateItemTest.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/test-data/LoginTest.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/test-data/LoginTest.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
