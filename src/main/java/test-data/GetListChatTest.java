@@ -15,10 +15,8 @@ public class GetListChatTest {
     @Test
     public void GetListChatWithoutAccessToken(){
         String access_token = "123";
-        ResponseChatList res = Unirest.get(Constant.BASE_URL + "chat")
-                .header("Authorization", "Bearer "+ access_token).
-                asObject(ResponseChatList.class).
-                getBody();
+        ResponseChatList res = Unirest.get(Constant.BASE_URL + "chat").header("Authorization",
+                "Bearer "+ access_token).asObject(ResponseChatList.class).getBody();
         System.out.println(res);
         assertEquals("1004", res.code);
     }

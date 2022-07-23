@@ -39,8 +39,8 @@ public class RunTestFromMain {
         //User choose test case to run
         String index = sc.nextLine()
                 .trim();
+        System.out.println(index);
         LauncherDiscoveryRequest request;
-        System.out.println("Running tests....");
         if (index.isEmpty()) {
             request = LauncherDiscoveryRequestBuilder.request()
                     .selectors(selectClass(testSuiteName)) //Run all test

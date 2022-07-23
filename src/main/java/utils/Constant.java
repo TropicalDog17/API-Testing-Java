@@ -2,19 +2,20 @@ import java.util.*;
 
 public class Constant {
     private final static ArrayList<String> baseEndpoints = new ArrayList<>(Arrays.asList("login",
-            "signup", "edit", "logout", "auctions/listAuctionsByStatus/{statusId}",
-            "auctions/listAuctionByUser",
+            "signup", "edit", "logout", "auctions", "auctions/listAuctionsByStatus/{statusId}",
+            "auctions/listAuctionByUser", "listAuctions/{typeId}", "auctions/detail/{auctionId}",
             "auctions/create", "auctions/edit", "items/create/{auctionId}",
-             "comments/{auctionId}", "bids/{auctionId}", "categories", "brands", "accept" +
-                    "/{auctionId}",
+             "comments/{auctionId}", "bids/create" +
+                    "/{auctionId}", "bids/{auctionId}", "categories", "brands", "accept",
              "likes/{statusId}", "totalLikes" + "/{auctionId}", "news", "news/read" +
                     "/{newId}", "notifications", "notifications/read/{auctionDenyId}", "slider",
             "search","chat/message/{chatId}", "comments/create/{auctionId}","comments/delete" +
                     "/{commentId}","chat" +
                     "/conversation" +
                     "/{userReceiveId}",
-            "changepass","chat/listMessages/{chatId}", "info",
-            "updateLike/{auctionId}", "items/create/{auctionId}"));
+            "changepass","accept" +
+                    "/{auctionId}", "chat/listMessages/{chatId}", "info",
+            "updateLike/{auctionId}"));
     private final static ArrayList<String> auctionEndpoints = new ArrayList<>(Arrays.asList("listAuctionsByStatus/{statusId}", "listAuctionByUser", "listAuctions/{typeId}", "detail/{auctionId}", "create", "edit/{auctionId}"));
     private final static ArrayList<String> commentEndpoints = new ArrayList<>(Arrays.asList("create/{auctionId}", "{auctionId}", "delete/{commentId}"));
     private final static ArrayList<String> notificationEndpoints = new ArrayList<>(Arrays.asList("", "read/{auctionDenyId}"));
@@ -43,36 +44,9 @@ public class Constant {
     public static final HashMap<String, ArrayList<String>> TEST_SUITES_LIST = new HashMap<>() {{
         put("LoginTest", new ArrayList<>(List.of("0.0")));
         put("SignupTest", new ArrayList<>(List.of("0.1")));
+        put("SearchTest", new ArrayList<>(List.of("0.30")));
         put("EditAccountTest", new ArrayList<>(List.of("0.2")));
-        put("LogoutTest", new ArrayList<>(List.of("0.3")));
-        put("GetListAuctionsByStatusTest", new ArrayList<>(List.of("0.4")));
-        put("GetListAuctionsByUserTest", new ArrayList<>(List.of("0.5")));
-        put("CreateAuctionTest", new ArrayList<>(List.of("0.6")));
-        put("EditAuctionTest", new ArrayList<>(List.of("0.7")));
-        put("CreateItemTest", new ArrayList<>(List.of("0.8")));
-        put("GetListCommentsTest", new ArrayList<>(List.of("0.9")));
-        put("GetListBidsTest", new ArrayList<>(List.of("0.10")));
-        put("GetCategoriesTest", new ArrayList<>(List.of("0.11")));
-        put("GetListBrandsTest", new ArrayList<>(List.of("0.12")));
-        put("AcceptMaxBidsTest", new ArrayList<>(List.of("0.13")));
-        put("GetListLikesTest", new ArrayList<>(List.of("0.14")));
-        put("TotalLikeOfAuctionTest", new ArrayList<>(List.of("0.15")));
-        put("GetNewsTest", new ArrayList<>(List.of("0.16")));
-        put("ReadNewsTest", new ArrayList<>(List.of("0.17")));
-        put("GetNotificationsTest", new ArrayList<>(List.of("0.18")));
-        put("ReadNotificationsTest", new ArrayList<>(List.of("0.19")));
-        put("GetSliderTest", new ArrayList<>(List.of("0.20")));
-        put("SearchTest", new ArrayList<>(List.of("0.21")));
-        put("CreateMessageOfChatTest", new ArrayList<>(List.of("0.22")));
-        put("CreateCommentsTest", new ArrayList<>(List.of("0.23")));
-        put("DeleteCommentsTest", new ArrayList<>(List.of("0.24")));
-        put("CreateChatTest", new ArrayList<>(List.of("0.25")));
-        put("ChangePassTest", new ArrayList<>(List.of("0.26")));
-        put("GetListMessageOfChatTest", new ArrayList<>(List.of("0.27")));
-        put("InfoTest", new ArrayList<>(List.of("0.28")));
-        put("LikeAuctionTest", new ArrayList<>(List.of("0.29")));
-        put("CreateItemTest", new ArrayList<>(List.of("0.30")));
-
+        put("GetCategoriesTest", new ArrayList<>(List.of("0.18")));
+        put("GetListAuctionsByStatusTest", new ArrayList<>(List.of("0.5", "1.0")));
     }};
-
 }

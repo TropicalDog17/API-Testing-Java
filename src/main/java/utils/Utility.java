@@ -1,5 +1,6 @@
 import kong.unirest.Unirest;
 import org.apache.commons.lang3.math.NumberUtils;
+import org.jetbrains.annotations.NotNull;
 
 
 import java.util.*;
@@ -66,15 +67,7 @@ public class Utility {
         Collections.sort(implementedOptionsList);
         return implementedOptionsList;
     }
-    public static ResponseDataAuction getListAuctionsByStatusId(String statusId) {
-        ResponseDataAuction res = Unirest.get(Constant.BASE_URL + "auctions/listAuctionsByStatus" + "/{statusId}")
-                .routeParam("statusId", statusId)
-                .queryString("index", "1")
-                .queryString("count", "10")
-                .asObject(ResponseDataAuction.class)
-                .getBody();
-        return res;
-    }
+
     public static String chooseAPIEndPoint(String baseUrlId) {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> endPointList = Constant.ENDPOINT_LIST.get(baseUrlId);
@@ -200,38 +193,11 @@ public class Utility {
             System.out.println("4: https://auctions-app-2.herokuapp.com/api/bid/");
             System.out.println("5: https://auctions-app-2.herokuapp.com/api/news/");
         }
-        private static void displayAPIOption( ArrayList<String> endPointList,
+        private static void displayAPIOption(@NotNull ArrayList<String> endPointList,
                                              ArrayList<Integer> implementedOptionsList){
             System.out.println("Choose an endpoint" + "(0-" + endPointList.size() + ")");
             System.out.println("Implemented option: " + implementedOptionsList);
             int index = 0;
             for (String endPoint : endPointList) System.out.println(index++ + ":/" + endPoint);
-        }
-        public static String createAuction(){
-            String access_token = Utility.getAccessTokenForTest("bachtx@gmail.com","12345");
-            ResponseCreateAuction res = Unirest.post(Constant.BASE_URL+"auctions/create")
-                    .header("Authorization", "Bearer" + access_token)
-                    .field("category_id","1")
-                    .queryString("start_date","2023-07-19T15:50:00")
-                    .queryString("end_date","2023-08-19T15:50:00")
-                    .queryString("title_ni",Utility.getRandomString(6))
-                    .asObject(ResponseCreateAuction.class)
-                    .getBody();
-            return res.data.auction_id;
-        }
-        public static String createComment(String access_token){
-            ResponeCreateComments res = Unirest.post(Constant.BASE_URL + "comments/create/1641")
-                    .header("Authorization", "Bearer " + access_token)
-                    .field("content",Utility.getRandomString(10))
-                    .queryString("comment_last_id",1)
-                    .asObject(ResponeCreateComments.class)
-                    .getBody();
-            ReaponseListComments res_2 = Unirest.get(Constant.BASE_URL + "comments/1641")
-                    .header("Authorization", "Bearer " + access_token)
-                    .queryString("index",1)
-                    .queryString("count",1)
-                    .asObject(ReaponseListComments.class)
-                    .getBody();
-            return res_2.data.comments.get(0).comment_id;
         }
     }
