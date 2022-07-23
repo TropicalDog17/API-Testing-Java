@@ -7,7 +7,6 @@ public class ReadNewsTest {
     @Test
     public void readNewsWithAccessToken() {
         String access_token = Utility.getAccessTokenForTest();
-
         ResponseReadNews res = Unirest.get(Constant.BASE_URL + "news/read/1")
                 .header("Authorization", "Bearer " + access_token)
                 .asObject(ResponseReadNews.class)

@@ -12,4 +12,12 @@ public class GetListMessageOfChatTest {
                         "Bearer " + access_token).asObject(ResponseListMessageOfChat.class).getBody();
         assertEquals("1000", res.code);
     }
+    @Test
+    public void getWithoutAccessToken(){
+        String access_token = "";
+        ResponseListMessageOfChat res =
+                Unirest.get(Constant.BASE_URL + "chat/listMessages/2").header("Authorization",
+                        "Bearer " + access_token).asObject(ResponseListMessageOfChat.class).getBody();
+        assertEquals("1004", res.code);
+    }
 }

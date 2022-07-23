@@ -1,11 +1,9 @@
 import kong.unirest.Unirest;
 import org.junit.jupiter.api.Test;
 
-import java.security.PublicKey;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Info {
+public class InfoTest {
     @Test
     public void InfoWithCorrectInputAndAccessToken() {
         String access_token = Utility.getAccessTokenForTest("annm@gmail.com", "123123");

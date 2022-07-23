@@ -40,8 +40,6 @@ public class RunTestFromMain {
         String index = sc.nextLine()
                 .trim();
         System.out.println(index);
-
-
         LauncherDiscoveryRequest request;
         if (index.isEmpty()) {
             request = LauncherDiscoveryRequestBuilder.request()

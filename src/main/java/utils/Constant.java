@@ -1,7 +1,21 @@
 import java.util.*;
 
 public class Constant {
-    private final static ArrayList<String> baseEndpoints = new ArrayList<>(Arrays.asList("login", "signup", "edit", "logout", "auctions", "auctions/listAuctionsByStatus/{statusId}", "auctions/listAuctionByUser", "listAuctions/{typeId}", "auctions/detail/{auctionId}", "auctions/create", "auctions/edit", "{auctionId}", "items/create/{auctionId}", "comments/create/{auctionId}", "comments", "bids/create/{auctionId}", "bids/{auctionId}", "categories", "brands", "accept", "{auctionId}", "contactUs", "updateLike", "likes/{statusId}", "totalLikes" + "/{auctionId}", "news", "news/read/{newId}", "notifications", "notifications/read/{auctionDenyId}", "slider", "search", "comments/delete/{commentId}"));
+    private final static ArrayList<String> baseEndpoints = new ArrayList<>(Arrays.asList("login",
+            "signup", "edit", "logout", "auctions", "auctions/listAuctionsByStatus/{statusId}",
+            "auctions/listAuctionByUser", "listAuctions/{typeId}", "auctions/detail/{auctionId}",
+            "auctions/create", "auctions/edit", "items/create/{auctionId}",
+             "comments/{auctionId}", "bids/create" +
+                    "/{auctionId}", "bids/{auctionId}", "categories", "brands", "accept",
+             "likes/{statusId}", "totalLikes" + "/{auctionId}", "news", "news/read" +
+                    "/{newId}", "notifications", "notifications/read/{auctionDenyId}", "slider",
+            "search","chat/message/{chatId}", "comments/create/{auctionId}","comments/delete" +
+                    "/{commentId}","chat" +
+                    "/conversation" +
+                    "/{userReceiveId}",
+            "changepass","accept" +
+                    "/{auctionId}", "chat/listMessages/{chatId}", "info",
+            "updateLike/{auctionId}"));
     private final static ArrayList<String> auctionEndpoints = new ArrayList<>(Arrays.asList("listAuctionsByStatus/{statusId}", "listAuctionByUser", "listAuctions/{typeId}", "detail/{auctionId}", "create", "edit/{auctionId}"));
     private final static ArrayList<String> commentEndpoints = new ArrayList<>(Arrays.asList("create/{auctionId}", "{auctionId}", "delete/{commentId}"));
     private final static ArrayList<String> notificationEndpoints = new ArrayList<>(Arrays.asList("", "read/{auctionDenyId}"));

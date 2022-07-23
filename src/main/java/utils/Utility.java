@@ -1,4 +1,6 @@
 import kong.unirest.Unirest;
+import org.apache.commons.lang3.math.NumberUtils;
+import org.jetbrains.annotations.NotNull;
 
 
 import java.util.*;
@@ -70,19 +72,30 @@ public class Utility {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> endPointList = Constant.ENDPOINT_LIST.get(baseUrlId);
         ArrayList<Integer> implementedOptionsList = getImplementedOptions(baseUrlId);
-        System.out.println("Choose an endpoint" + "(0-" + endPointList.size() + ")");
-        System.out.println("Implemented option: " + implementedOptionsList);
-        int index = 0;
-        for (String endPoint : endPointList) {
-            System.out.println(index++ + ":/" + endPoint);
-
-        }
+        displayAPIOption(endPointList, implementedOptionsList);
         String endPointId = sc.nextLine()
                 .trim();
+        if(endPointId.isEmpty()){
+            displayAPIOption(endPointList, implementedOptionsList);
+            System.out.println("Please enter an option: ");
+        }
+        //If user inputs unexpected options, display the menu and ask for user input again
+        while(!implementedOptionsList.contains(NumberUtils.toInt(endPointId, -1))){
+            if(endPointId.isEmpty()){
+                displayAPIOption(endPointList, implementedOptionsList);
+                System.out.println("Please enter an option: ");
+            }
+            else{
+                displayAPIOption(endPointList, implementedOptionsList);
+                System.out.println("Option not implemented! Please choose another one: ");
+            }
+            endPointId = sc.nextLine().trim();
+
+        }
+        System.out.println(baseUrlId + "." + endPointId);
         return baseUrlId + "." + endPointId;
     }
     // Register a new account with fixed password and random email
-
     /**
      * @return AbstractMap.SimpleEntry<String, String>
      */
@@ -154,5 +167,12 @@ public class Utility {
             System.out.println("3: https://auctions-app-2.herokuapp.com/api/notifications/");
             System.out.println("4: https://auctions-app-2.herokuapp.com/api/bid/");
             System.out.println("5: https://auctions-app-2.herokuapp.com/api/news/");
+        }
+        private static void displayAPIOption(@NotNull ArrayList<String> endPointList,
+                                             ArrayList<Integer> implementedOptionsList){
+            System.out.println("Choose an endpoint" + "(0-" + endPointList.size() + ")");
+            System.out.println("Implemented option: " + implementedOptionsList);
+            int index = 0;
+            for (String endPoint : endPointList) System.out.println(index++ + ":/" + endPoint);
         }
     }
