@@ -10,27 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="refactor project directory">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/untitled1_jar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/untitled1_jar3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/LoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SignupTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/SignupTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/ChangePassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/ChangePassTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/SignupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/SignupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,11 +86,11 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/build.gradle" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/settings.gradle" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/utils/RunTestFromMain.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/build.gradle" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Main.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/test-data/LoginTest.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/utils/RunTestFromMain.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -129,6 +110,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -223,8 +205,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.GetNewsTest.getNewsWithAccessToken" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.GetNewsTest.getNewsWithAccessToken" />
       <item itemvalue="JUnit.LoginTest" />
       <item itemvalue="JUnit.AcceptMaxBidsTest.AcceptMaxBidsTestWithoutLogin" />
       <item itemvalue="JUnit.ChangePassTest.ChangePassWithoutAccessToken" />
