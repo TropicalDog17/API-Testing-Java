@@ -104,6 +104,12 @@ public class Utility {
         System.out.println(baseUrlId + "." + endPointId);
         return baseUrlId + "." + endPointId;
     }
+
+    private static void displayAPIOption(ArrayList<String> endPointList, ArrayList<Integer> implementedOptionsList) {
+        System.out.println("Choose an endpoint" + "(0-" + endPointList.size() + ")");
+        int index = 0;
+        for (String endPoint : endPointList) System.out.println(index++ + ":/" + endPoint);
+    }
     // Register a new account with fixed password and random email
 
     /**
@@ -198,22 +204,24 @@ public class Utility {
 
     private static void displayMenu() {
         System.out.println("==============MENU==============");
-        System.out.println("Choose base URL(0/1/2/3/4/Enter): ");
+//        System.out.println("Choose base URL(0/1/2/3/Enter): ");
+//
+//        System.out.println("Enter(0): https://auctions-app-2.herokuapp.com/api/");
+//        System.out.println("1: https://auctions-app-2.herokuapp.com/api/comments/");
+//        System.out.println("2: https://auctions-app-2.herokuapp.com/api/auctions/");
+//        System.out.println("3: https://auctions-app-2.herokuapp.com/api/items/");
 
-        System.out.println("Enter(0): https://auctions-app-2.herokuapp.com/api/");
-        System.out.println("1: https://auctions-app-2.herokuapp.com/api/auctions/");
-        System.out.println("2: https://auctions-app-2.herokuapp.com/api/comments/");
-        System.out.println("3: https://auctions-app-2.herokuapp.com/api/notifications/");
-        System.out.println("4: https://auctions-app-2.herokuapp.com/api/bid/");
-        System.out.println("5: https://auctions-app-2.herokuapp.com/api/news/");
+
+        for (Map.Entry<String, String> set : Constant.BASE_URL_LIST.entrySet()) {
+            if (set.getKey()
+                    .equals("0")) {
+                System.out.println("Enter(0):" + set.getValue());
+            } else {
+                System.out.println(set.getKey() + ": " + set.getValue());
+            }
+        }
     }
 
-    private static void displayAPIOption(ArrayList<String> endPointList, ArrayList<Integer> implementedOptionsList) {
-        System.out.println("Choose an endpoint" + "(0-" + endPointList.size() + ")");
-        System.out.println("Implemented option: " + implementedOptionsList);
-        int index = 0;
-        for (String endPoint : endPointList) System.out.println(index++ + ":/" + endPoint);
-    }
 
     public static String createAuction() {
         String access_token = Utility.getAccessTokenForTest("bachtx@gmail.com", "12345");

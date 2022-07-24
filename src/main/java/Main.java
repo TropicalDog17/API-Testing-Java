@@ -6,7 +6,7 @@ public class Main {
         String baseUrlID = Utility.chooseBaseUrl();
         String testSuiteId = Utility.chooseAPIEndPoint(baseUrlID);
         System.out.println(testSuiteId);
-        
+
         RunTestFromMain runner = new RunTestFromMain();
         runner.runTest(testSuiteId);
         runner.displayTestResult();

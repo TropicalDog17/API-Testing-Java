@@ -33,7 +33,7 @@ public class Constant {
         put("CreateAuctionTest", new ArrayList<>(List.of("0.6", "2.2")));
         put("EditAuctionTest", new ArrayList<>(List.of("0.7", "2.3")));
         put("CreateItemTest", new ArrayList<>(List.of("0.8", "3.1")));
-        put("GetListCommentsTest", new ArrayList<>(List.of("0.9", "1.2")));
+        put("GetListCommentsTest", new ArrayList<>(List.of("0.9", "1.1")));
         put("GetListBidsTest", new ArrayList<>(List.of("0.10")));
         put("GetCategoriesTest", new ArrayList<>(List.of("0.11")));
         put("GetListBrandsTest", new ArrayList<>(List.of("0.12")));

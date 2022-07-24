@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="untitled1:jar4" />
+      <artifact name="untitled1:jar5" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,14 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="final">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled1_jar4/untitled1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled1_jar4/untitled1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/GetCategories.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/GetListAuctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/LoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/SignupTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Utility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +128,7 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -163,7 +172,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in org.example.untitled1.main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="org.example.untitled1.main" />
@@ -294,6 +303,7 @@
       <workItem from="1657332903370" duration="5085000" />
       <workItem from="1657363455674" duration="1788000" />
       <workItem from="1658579033906" duration="1374000" />
+      <workItem from="1658622972657" duration="871000" />
     </task>
     <task id="LOCAL-00001" summary="Fix build.gradle">
       <created>1655626321811</created>
@@ -428,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658622379089</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="final">
+      <created>1658622534185</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1658622534185</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
