@@ -55,20 +55,19 @@ public class RunTestFromMain {
         launcher.discover(request);
         launcher.registerTestExecutionListeners(listener);
         launcher.execute(request);
-        System.out.println(testSuiteName);
+        System.out.println("Testing: " + testSuiteName);
     }
 
     public void displayTestResult() {
         TestExecutionSummary summary = this.listener.getSummary();
-        System.out.println(summary.getTestsFoundCount());
         System.out.println("Test succeeded: " + summary.getTestsSucceededCount());
         System.out.println("Test failed: " + summary.getTestsFailedCount());
         List<TestExecutionSummary.Failure> failedTests = summary.getFailures();
         if (failedTests.size() > 0) {
             for (TestExecutionSummary.Failure test : failedTests) {
-                System.out.println(test.getTestIdentifier()
+                System.out.println("+" + test.getTestIdentifier()
                         .getDisplayName());
-                System.out.println(test.getException()
+                System.out.println("       " + test.getException()
                         .toString());
             }
         }

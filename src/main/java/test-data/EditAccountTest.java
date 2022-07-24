@@ -43,8 +43,7 @@ public class EditAccountTest {
         String password = userInfo.getValue();
         String newPassword = Utility.getRandomString(10);
         String access_token = Utility.getAccessTokenForTest(email, password);
-        ResponseDataAccount res = editAccount(access_token, email, newPassword, newPassword,
-                "Lo4l", "349028402384");
+        ResponseDataAccount res = Utility.editAccount(access_token, email, newPassword, newPassword, "Lo4l", "349028402384");
 
         System.out.println(res.message);
         assertEquals("1000", res.code);
@@ -53,15 +52,15 @@ public class EditAccountTest {
         assertNotEquals("Wrong user info", resWithNewPass);
 
     }
+
     @Test
-    void EditEmailOnly(){
+    void EditEmailOnly() {
         AbstractMap.SimpleEntry<String, String> userInfo = Utility.RandomSignup();
         String email = userInfo.getKey();
         String password = userInfo.getValue();
         String newEmail = Utility.getRandomEmail(10);
         String access_token = Utility.getAccessTokenForTest(email, password);
-        ResponseDataAccount res = editAccount(access_token, newEmail, password, password,
-                "Lo4l", "349028402384");
+        ResponseDataAccount res = Utility.editAccount(access_token, newEmail, password, password, "Lo4l", "349028402384");
 
         System.out.println(res.message);
         assertEquals("1000", res.code);
@@ -85,20 +84,5 @@ public class EditAccountTest {
 //
 //    }
 
-    private ResponseDataAccount editAccount(String access_token, String newEmail,
-                                            String newPassword,
-                                            String newRe_pass, String newName, String newPhone) {
 
-
-        return Unirest.post(Constant.BASE_URL + "edit")
-                .header("Authorization", "Bearer " + access_token)
-                .header("accept", "application/json")
-                .field("email", newEmail)
-                .field("password", newPassword)//Different from the old one
-                .field("re_pass", newRe_pass)
-                .field("name", newName)
-                .field("phone", newPhone)
-                .asObject(ResponseDataAccount.class)
-                .getBody();
-    }
 }

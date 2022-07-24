@@ -7,24 +7,7 @@ import java.util.*;
 public class Utility {
 
 
-    public static String getAccessTokenForTest(String email, String password) {
-        //Login successfully first
-        ResponseWithAccessToken res = Unirest.post("https://auctions-app-2.herokuapp.com/api/login")
-                .field("email", email)
-                .field("password", password)
-                .asObject(ResponseWithAccessToken.class)//ObjectMapper
-                .getBody();
-        //If successfully login, return access token for use
-        if (res.code.equals("1000")) {
-            return res.data.access_token;
-        }
-        return "Wrong user info";
-    }
-
     //Get default access token
-    public static String getAccessTokenForTest() {
-        return getAccessTokenForTest("oop123456@gmail.com", "123456");
-    }
 
     public static String chooseBaseUrl() {
         Scanner sc = new Scanner(System.in);
@@ -38,6 +21,10 @@ public class Utility {
             return "0";
         }
         while (!Constant.BASE_URL_LIST.containsKey(baseUrlID)) { //Users enter wrong option
+            if (baseUrlID.equals("x")) {
+                System.out.println("Exiting...");
+                System.exit(0);
+            }
             System.out.println("Wrong options");
             displayMenu();
             baseUrlID = sc.nextLine()
@@ -101,7 +88,6 @@ public class Utility {
                     .trim();
 
         }
-        System.out.println(baseUrlId + "." + endPointId);
         return baseUrlId + "." + endPointId;
     }
 
@@ -203,6 +189,7 @@ public class Utility {
     }
 
     private static void displayMenu() {
+
         System.out.println("==============MENU==============");
 //        System.out.println("Choose base URL(0/1/2/3/Enter): ");
 //
@@ -211,7 +198,7 @@ public class Utility {
 //        System.out.println("2: https://auctions-app-2.herokuapp.com/api/auctions/");
 //        System.out.println("3: https://auctions-app-2.herokuapp.com/api/items/");
 
-
+        System.out.println("Choose a base URL: ");
         for (Map.Entry<String, String> set : Constant.BASE_URL_LIST.entrySet()) {
             if (set.getKey()
                     .equals("0")) {
@@ -220,8 +207,26 @@ public class Utility {
                 System.out.println(set.getKey() + ": " + set.getValue());
             }
         }
+        System.out.println("x: Exit");
     }
 
+    public static String getAccessTokenForTest() {
+        return getAccessTokenForTest("oop123456@gmail.com", "123456");
+    }
+
+    public static String getAccessTokenForTest(String email, String password) {
+        //Login successfully first
+        ResponseWithAccessToken res = Unirest.post("https://auctions-app-2.herokuapp.com/api/login")
+                .field("email", email)
+                .field("password", password)
+                .asObject(ResponseWithAccessToken.class)//ObjectMapper
+                .getBody();
+        //If successfully login, return access token for use
+        if (res.code.equals("1000")) {
+            return res.data.access_token;
+        }
+        return "Wrong user info";
+    }
 
     public static String createAuction() {
         String access_token = Utility.getAccessTokenForTest("bachtx@gmail.com", "12345");
@@ -250,5 +255,20 @@ public class Utility {
                 .asObject(ReaponseListComments.class)
                 .getBody();
         return res_2.data.comments.get(0).comment_id;
+    }
+
+    public static ResponseDataAccount editAccount(String access_token, String newEmail, String newPassword, String newRe_pass, String newName, String newPhone) {
+
+
+        return Unirest.post(Constant.BASE_URL + "edit")
+                .header("Authorization", "Bearer " + access_token)
+                .header("accept", "application/json")
+                .field("email", newEmail)
+                .field("password", newPassword)//Different from the old one
+                .field("re_pass", newRe_pass)
+                .field("name", newName)
+                .field("phone", newPhone)
+                .asObject(ResponseDataAccount.class)
+                .getBody();
     }
 }

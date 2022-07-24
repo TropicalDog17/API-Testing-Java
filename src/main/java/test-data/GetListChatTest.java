@@ -12,7 +12,7 @@ public class GetListChatTest {
                 .asObject(ResponseChatList.class)
                 .getBody();
         assertEquals("1000", res.code);
-        System.out.println(res.data.chat.toString());
+        System.out.println(res.data.chat.get(0).chat_id);
     }
 
     @Test

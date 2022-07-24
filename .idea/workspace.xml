@@ -17,14 +17,20 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/GetCategories.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/GetListAuctions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/LoginTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/SignupTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/EditAccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/EditAccountTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled1_jar5/untitled1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled1_jar5/untitled1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/CreateMessageOfChatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/CreateMessageOfChatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/DeleteCommentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/DeleteCommentsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/EditAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/EditAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/GetListChatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/GetListChatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test-data/GetListMessageOfChatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test-data/GetListMessageOfChatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/RunTestFromMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/RunTestFromMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Utility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,20 +178,10 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.All in org.example.untitled1.main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="org.example.untitled1.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AcceptMaxBidsTest.AcceptMaxBidsTestWithoutLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="org.example.untitled1.main" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AcceptMaxBidsTest" />
-      <option name="METHOD_NAME" value="AcceptMaxBidsTestWithoutLogin" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -208,29 +204,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateMessageOfChatTest.CreateMessageWithIdOfReceiver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="org.example.untitled1.main" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="CreateMessageOfChatTest" />
+      <option name="METHOD_NAME" value="CreateMessageWithIdOfReceiver" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetListChatTest.GetListChatWithAccessToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="org.example.untitled1.main" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GetListChatTest" />
+      <option name="METHOD_NAME" value="GetListChatWithAccessToken" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.LoginTest" />
-      <item itemvalue="JUnit.AcceptMaxBidsTest.AcceptMaxBidsTestWithoutLogin" />
       <item itemvalue="JUnit.ChangePassTest.ChangePassWithoutAccessToken" />
       <item itemvalue="JUnit.All in org.example.untitled1.main" />
+      <item itemvalue="JUnit.GetListChatTest.GetListChatWithAccessToken" />
+      <item itemvalue="JUnit.CreateMessageOfChatTest.CreateMessageWithIdOfReceiver" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in org.example.untitled1.main" />
-        <item itemvalue="JUnit.ChangePassTest.ChangePassWithoutAccessToken" />
-        <item itemvalue="JUnit.AcceptMaxBidsTest.AcceptMaxBidsTestWithoutLogin" />
-        <item itemvalue="JUnit.LoginTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CreateMessageOfChatTest.CreateMessageWithIdOfReceiver" />
+        <item itemvalue="JUnit.GetListChatTest.GetListChatWithAccessToken" />
+        <item itemvalue="JUnit.ChangePassTest.ChangePassWithoutAccessToken" />
       </list>
     </recent_temporary>
   </component>
@@ -303,7 +310,8 @@
       <workItem from="1657332903370" duration="5085000" />
       <workItem from="1657363455674" duration="1788000" />
       <workItem from="1658579033906" duration="1374000" />
-      <workItem from="1658622972657" duration="871000" />
+      <workItem from="1658622972657" duration="3366000" />
+      <workItem from="1658629792812" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="Fix build.gradle">
       <created>1655626321811</created>
@@ -445,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658622534185</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="final">
+      <created>1658624037797</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1658624037797</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

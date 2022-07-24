@@ -30,4 +30,19 @@ public class CreateMessageOfChatTest {
         assertNull(res);
 
     }
+
+    @Test
+    public void CreateMessageWithIdOfReceiver() {
+        String access_token = Utility.getAccessTokenForTest();
+
+        ResponseCreateMessageOfChat res = Unirest.post(Constant.BASE_URL + "chat/message")
+                .header("Authorization", "Bearer " + access_token)
+                .queryString("chat_id", "12")
+                .queryString("content", "lol")
+                .queryString("user_send_id", "2")
+                .asObject(ResponseCreateMessageOfChat.class)
+                .getBody();
+        assertNotEquals("1000", res.code);
+    }
+
 }
