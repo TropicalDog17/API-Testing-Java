@@ -9,9 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="add JAR">
+    <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RunTestFromMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled1_jar4/untitled1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled1_jar4/untitled1.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -415,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658621603341</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="final">
+      <created>1658622379089</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1658622379089</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +484,8 @@
     <MESSAGE value="add file JAR" />
     <MESSAGE value="add test to menu" />
     <MESSAGE value="add JAR" />
-    <option name="LAST_COMMIT_MESSAGE" value="add JAR" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
