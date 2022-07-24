@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="untitled1:jar3" />
+      <artifact name="untitled1:jar4" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="refactor project directory">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/META-INF/MANIFEST.MF" afterDir="false" />
+    <list default="true" id="a48d9dfd-0a91-48f0-8027-1012504b7110" name="Changes" comment="add JAR file">
+      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled1_jar4/untitled1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/test-automation-jar/test.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +68,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -113,7 +113,6 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -157,7 +156,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChangePassTest.ChangePassWithoutAccessToken">
+  <component name="RunManager" selected="JUnit.All in org.example.untitled1.main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="org.example.untitled1.main" />
@@ -175,21 +174,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in org.example.untitled1.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="org.example.untitled1.main" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ChangePassTest.ChangePassWithoutAccessToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="org.example.untitled1.main" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ChangePassTest" />
       <option name="METHOD_NAME" value="ChangePassWithoutAccessToken" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetNewsTest.getNewsWithAccessToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="org.example.untitled1.main" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetNewsTest" />
-      <option name="METHOD_NAME" value="getNewsWithAccessToken" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -206,18 +203,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.GetNewsTest.getNewsWithAccessToken" />
       <item itemvalue="JUnit.LoginTest" />
       <item itemvalue="JUnit.AcceptMaxBidsTest.AcceptMaxBidsTestWithoutLogin" />
       <item itemvalue="JUnit.ChangePassTest.ChangePassWithoutAccessToken" />
+      <item itemvalue="JUnit.All in org.example.untitled1.main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in org.example.untitled1.main" />
         <item itemvalue="JUnit.ChangePassTest.ChangePassWithoutAccessToken" />
         <item itemvalue="JUnit.AcceptMaxBidsTest.AcceptMaxBidsTestWithoutLogin" />
         <item itemvalue="JUnit.LoginTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.GetNewsTest.getNewsWithAccessToken" />
       </list>
     </recent_temporary>
   </component>
@@ -375,7 +372,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656413992457</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add JAR file">
+      <created>1658620861528</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1658620861528</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add JAR file">
+      <created>1658620890600</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1658620890600</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +437,8 @@
     <MESSAGE value="refactor project directory" />
     <MESSAGE value="extracting doLogin method" />
     <MESSAGE value="refactor getRandomEmail, add Parameterized test annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor getRandomEmail, add Parameterized test annotation" />
+    <MESSAGE value="add JAR file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add JAR file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
