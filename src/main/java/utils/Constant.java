@@ -1,27 +1,16 @@
 import java.util.*;
 
 public class Constant {
-    private final static ArrayList<String> baseEndpoints = new ArrayList<>(Arrays.asList("login",
-            "signup", "edit", "logout", "auctions/listAuctionsByStatus/{statusId}",
-            "auctions/listAuctionByUser",
-            "auctions/create", "auctions/edit", "items/create/{auctionId}",
-             "comments/{auctionId}", "bids/{auctionId}", "categories", "brands", "accept" +
-                    "/{auctionId}",
-             "likes/{statusId}", "totalLikes" + "/{auctionId}", "news", "news/read" +
-                    "/{newId}", "notifications", "notifications/read/{auctionDenyId}", "slider",
-            "search","chat/message/{chatId}", "comments/create/{auctionId}","comments/delete" +
-                    "/{commentId}","chat" +
-                    "/conversation" +
-                    "/{userReceiveId}",
-            "changepass","chat/listMessages/{chatId}", "info",
-            "updateLike/{auctionId}", "items/create/{auctionId}"));
+    private final static ArrayList<String> baseEndpoints = new ArrayList<>(Arrays.asList("login", "signup", "edit", "logout", "auctions/listAuctionsByStatus/{statusId}", "auctions/listAuctionByUser", "auctions/create", "auctions/edit", "items/create/{auctionId}", "comments/{auctionId}", "bids/{auctionId}", "categories", "brands", "accept" + "/{auctionId}", "likes/{statusId}", "totalLikes" + "/{auctionId}", "news", "news/read" + "/{newId}", "notifications", "notifications/read/{auctionDenyId}", "slider", "search", "chat/message/{chatId}", "comments/create/{auctionId}", "comments/delete" + "/{commentId}", "chat" + "/conversation" + "/{userReceiveId}", "changepass", "chat/listMessages/{chatId}", "info", "updateLike/{auctionId}", "items/create/{auctionId}"));
     private final static ArrayList<String> auctionEndpoints = new ArrayList<>(Arrays.asList("listAuctionsByStatus/{statusId}", "listAuctionByUser", "listAuctions/{typeId}", "detail/{auctionId}", "create", "edit/{auctionId}"));
     private final static ArrayList<String> commentEndpoints = new ArrayList<>(Arrays.asList("create/{auctionId}", "{auctionId}", "delete/{commentId}"));
     private final static ArrayList<String> notificationEndpoints = new ArrayList<>(Arrays.asList("", "read/{auctionDenyId}"));
     private final static ArrayList<String> bidEndpoints = new ArrayList<>(Arrays.asList("create" + "/{auctionId}", "{auctionId}"));
     private final static ArrayList<String> newsEndpoints = new ArrayList<>(Arrays.asList("", "read/{newId}"));
     static final String BASE_URL = "https://auctions-app-2.herokuapp.com/api/";
-    /** Cac thong tin chung de thuan tien cho viec test*/
+    /**
+     * Cac thong tin chung de thuan tien cho viec test
+     */
     public static String USER_ID = "490";
     public static final HashMap<String, String> BASE_URL_LIST = new HashMap<>() {{
         put("0", "https://auctions-app-2.herokuapp.com/api/");
@@ -71,7 +60,7 @@ public class Constant {
         put("GetListMessageOfChatTest", new ArrayList<>(List.of("0.27")));
         put("InfoTest", new ArrayList<>(List.of("0.28")));
         put("LikeAuctionTest", new ArrayList<>(List.of("0.29")));
-        put("CreateItemTest", new ArrayList<>(List.of("0.30")));
+        put("InfoItemTest", new ArrayList<>(List.of("0.30")));
 
     }};
 
