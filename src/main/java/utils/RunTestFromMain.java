@@ -15,7 +15,7 @@ import static org.junit.platform.launcher.EngineFilter.includeEngines;
 
 public class RunTestFromMain {
     private String testSuiteName;
-    private final HashMap<String, ArrayList<String>> testSuitesList = Constant.TEST_SUITES_LIST;
+    private final HashMap<String, ArrayList<String>> testSuitesList = Constant.MAPPED_TEST_SUITES_LIST;
 
     SummaryGeneratingListener listener = new SummaryGeneratingListener();
 
